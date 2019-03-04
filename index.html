@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CodeFlair | Homepage</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-32x32.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Bootstrap + Custom Stylez -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="css/animate.css" rel="stylesheet" media="all">
+    <link href="css/webfonts.css" rel="stylesheet" media="all">
+    <link href="slick-1.8.1/slick/slick.css" rel="stylesheet">
+    <link href="slick-1.8.1/slick/slick-theme.css" rel="stylesheet">
+    <link href="css/codeflair.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="main">
+
+    <nav class="navbar navbar-default codeflair_navbar ">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#codeFlairCollapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/CodeFlair-main-logo.svg" class="img-responsive nav_main_logo" alt="CodeFlair main logo icon">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="codeFlairCollapse">
+                <ul class="nav navbar-nav codeflair_main_menu navbar-right">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">CLIENTS</a></li>
+                    <li><a href="#">SWITZERLAND OFFICE</a></li>
+                    <li><a href="#">MACEDONIA OFFICE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+
+                    <li class="expanding-sf">
+                        <div class="form"> <span class="toggle"></span>
+                            <form role="search" method="get" id="searchform" action="" autocomplete="off">
+                                <input type="text" placeholder="Enter a keyword" onfocus="placeholder='' " onblur="placeholder='Enter a keyword' " id="s" name="s" value="" class="proxima_lite">
+                                <input type="submit" value="" id="searchsubmit">
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <header class="codeflair_homepage_header">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="header_slider_mask_holder">
+
+                    <div class="col-sm-6 h_banner_holder">
+                        <div class="h_banner">
+                            <div class="text_content_slide_1 hide show">
+                                <h2 class="header_title">CodeFlair Developed a New Revolutionary JS Platform and Framework</h2>
+                                <p class="header_teaser_text">
+                                    A group of developers and entrepreneurs from CodeFlair has developed a revolutionary JS-powered framework.
+                                </p>
+                            </div>
+                            <div class="text_content_slide_2 hide">
+                                <h2 class="header_title">New Chemex Coffee Filters Are Created on 3D-Printer</h2>
+                                <p class="header_teaser_text">
+                                    From now on all the Skopje-based employees can enjoy a quality Chemex coffee with brand new filters.
+                                </p>
+                            </div>
+                            <div class="text_content_slide_3 hide">
+                                <h2 class="header_title">Bill Gates Foundation to Invest $65M in CodeFlair</h2>
+                                <p class="header_teaser_text">
+                                    It's reported that Bill Gates and his BMG Foundation will allegedly invest in CodeFlair about
+                                    70,000,000$ later this year.
+                                </p>
+                            </div>
+                            <button id="discoverMore" class="btn discover_more_btn">Discover More</button>
+                        </div>
+                    </div>
+
+                    <div class="hole"></div>
+                        <div id="codeflair-header-slider" class="carousel slide carousel-fade" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#codeflair-header-slider" data-slide-to="0" class="active"></li>
+                                <li data-target="#codeflair-header-slider" data-slide-to="1"></li>
+                                <li data-target="#codeflair-header-slider" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner codeflair_inner_slider" role="listbox">
+
+                                <!-- The <img> attribute is commented out and the 'background:cover' option has been used for proper responsive behavior and more stability in general -->
+                                <div id="slide1" class="item active">
+                                    <!--<img src="img/slide-one.jpg" class="header_slide" alt="Happy CodeFlair employees chat at their workplace">-->
+                                    <div class="slide_image" style="background: url('img/slide-one.jpg') center center no-repeat; background-size: cover;"></div>
+                                </div>
+
+                                <div id="slide2" class="item">
+                                    <!--<img src="img/slide-two.jpg" class="header_slide" alt="CodeFlair employee works by her laptop">-->
+                                    <div class="slide_image" style="background: url('img/slide-two.jpg') center center no-repeat; background-size: cover;"></div>
+                                </div>
+
+                                <div id="slide3" class="item">
+                                    <!--<img src="img/slide-three.jpg" class="header_slide" alt="CodeFlair Project Manager writes on a whiteboard">-->
+                                    <div class="slide_image" style="background: url('img/slide-three.jpg') center center no-repeat; background-size: cover;"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </header> <!-- Header END -->
+
+    <div id="clientLogos" class="client_logos_area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="client_logos_holder">
+                    <ul class="client_logos">
+                        <li><span class="client_logo" style="background: url('img/Airzone.png') center center no-repeat; background-size: contain;"></span></li>
+                        <li><span class="client_logo" style="background: url('img/JuicePlus.png') center center no-repeat; background-size: contain;"></span></li>
+                        <li><span class="client_logo" style="background: url('img/Swisscom.png') center center no-repeat; background-size: contain;"></span></li>
+                        <li><span class="client_logo" style="background: url('img/Infocentric.png') center center no-repeat; background-size: contain;"></span></li>
+                        <li><span class="client_logo" style="background: url('img/Holfuly.png') center center no-repeat; background-size: contain;"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Client Logos Area END -->
+
+    <div class="decorative_oval_holder">
+        <div class="decorative_oval"></div>
+    </div>
+
+    <div class="service_tabs_area">
+        <div class="container">
+            <div class="row">
+                <div class="main_three_tabs_holder">
+
+                    <!-- Main Nav Tabs -->
+                    <ul class="nav nav-tabs main_tabs" role="tablist">
+
+                        <li role="presentation" class="main_tab_btn active">
+                            <a href="#softwareArchitecture" aria-controls="softwareArchitecture" role="tab" data-toggle="tab">
+                                <section class="tab_mid_content">
+                                    <span class="main_tab_icon software"></span>
+                                    <h5 class="main_tab_title">Software Architecture</h5>
+                                </section>
+                            </a>
+                        </li>
+
+                        <li role="presentation" class="main_tab_btn">
+                            <a href="#mobileAndApps" aria-controls="mobileAndApps" role="tab" data-toggle="tab">
+                                <section class="tab_mid_content">
+                                    <span class="main_tab_icon mobileandapps"></span>
+                                    <h5 class="main_tab_title">Mobile & Apps</h5>
+                                </section>
+                            </a>
+                        </li>
+
+                        <li role="presentation" class="main_tab_btn">
+                            <a href="#adobeAem" aria-controls="adobeAem" role="tab" data-toggle="tab">
+                                <section class="tab_mid_content">
+                                    <span class="main_tab_icon adobeam"></span>
+                                    <h5 class="main_tab_title">Adobe AM/CQ5</h5>
+                                </section>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Main Tab Panes -->
+                    <div class="tab-content main_tab_content">
+
+                        <div role="tabpanel" class="tab-pane fade in services_tab_pane active" id="softwareArchitecture">
+
+                            <div class="col-sm-4 textual_content_area">
+                                <div class="tab-content mini_tab_content">
+
+                                    <div role="tabpanel" class="tab-pane fade in services_tab_pane active" id="seo">
+                                        <div class="title_text_and_button_holder">
+                                            <h5 class="mini_tab_title">SEO</h5>
+                                            <p class="mini_tab_text">
+                                                Mauris augue neque gravida in fermentum. Semper feugiat nibh sed pulvinar
+                                                proin gravida hendrerit lectus. Cursus in hac habitasse platea dictumst.
+                                                Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat.
+                                                Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue.
+                                                Enim ut sem viverra aliquet eget sit amet. Vitae tortor condimentum lacinia
+                                                quis vel eros. At in tellus integer feugiat scelerisque varius morbi enim nunc.
+                                                Porta non pulvinar neque laoreet. Mattis aliquam faucibus purus in massa.
+                                            </p>
+                                            <button class="btn more_info_btn">More Info</button>
+                                        </div>
+                                    </div> <!-- SEO Tab END-->
+
+                                    <div role="tabpanel" class="tab-pane fade services_tab_pane" id="api">
+                                        <div class="title_text_and_button_holder">
+                                            <h5 class="mini_tab_title">API</h5>
+                                            <p class="mini_tab_text">
+                                                Orci eu lobortis elementum nibh tellus. Nulla facilisi morbi tempus iaculis urna id.
+                                                Imperdiet dui accumsan sit amet nulla facilisi. A arcu cursus vitae congue mauris
+                                                rhoncus aenean vel elit. Nec dui nunc mattis enim ut tellus. Risus pretium quam
+                                                vulputate dignissim suspendisse in est ante in. Neque laoreet suspendisse interdum
+                                                consectetur libero. Integer vitae justo eget magna fermentum. Donec pretium vulputate
+                                                sapien nec sagittis aliquam malesuada bibendum. Netus et malesuada fames ac turpis
+                                                egestas sed tempus urna.
+                                            </p>
+                                            <button class="btn more_info_btn">More Info</button>
+                                        </div>
+                                    </div> <!-- API Tab END-->
+
+                                    <div role="tabpanel" class="tab-pane fade services_tab_pane" id="uiux">
+                                        <div class="title_text_and_button_holder">
+                                            <h5 class="mini_tab_title">UI/UX</h5>
+                                            <p class="mini_tab_text">
+                                                Auctor neque vitae tempus quam pellentesque nec nam aliquam. Augue ut
+                                                lectus arcu bibendum at varius vel pharetra vel. Id consectetur purus ut
+                                                faucibus pulvinar. Nulla posuere sollicitudin aliquam ultrices sagittis
+                                                orci a. Libero id faucibus nisl tincidunt eget. Semper eget duis at tellus
+                                                at urna condimentum mattis. Accumsan sit amet nulla facilisi morbi tempus
+                                                iaculis urna. Maecenas pharetra convallis posuere morbi leo urna. Erat nam at
+                                                lectus urna. In nulla posuere sollicitudin aliquam. Ac auctor augue mauris
+                                                augue. Aliquet lectus proin nibh nisl condimentum. Sit amet consectetur
+                                                adipiscing elit ut aliquam purus sit amet.
+                                                faucibus pulvinar. Nulla posuere sollicitudin aliquam ultrices sagittis
+                                                orci a. Libero id faucibus nisl tincidunt eget. Semper eget duis at tellus
+                                                at urna condimentum mattis. Accumsan sit amet nulla facilisi morbi tempus
+                                                iaculis urna. Maecenas pharetra convallis posuere morbi leo urna. Erat nam at
+                                                lectus urna. In nulla posuere sollicitudin aliquam. Ac auctor augue mauris
+                                                augue. Aliquet lectus proin nibh nisl condimentum. Sit amet consectetur
+                                                adipiscing elit ut aliquam purus sit amet.
+                                            </p>
+                                            <button class="btn more_info_btn">More Info</button>
+                                        </div>
+                                    </div> <!-- UI/UX Tab END-->
+
+                                    <div role="tabpanel" class="tab-pane fade services_tab_pane" id="ecommerce">
+                                        <div class="title_text_and_button_holder">
+                                            <h5 class="mini_tab_title">E-Commerce</h5>
+                                            <p class="mini_tab_text">
+                                                Orci eu lobortis elementum nibh tellus. Nulla facilisi morbi tempus iaculis urna id.
+                                                Imperdiet dui accumsan sit amet nulla facilisi. A arcu cursus vitae congue mauris
+                                                rhoncus aenean vel elit. Nec dui nunc mattis enim ut tellus. Risus pretium quam
+                                                vulputate dignissim suspendisse in est ante in. Neque laoreet suspendisse interdum
+                                                consectetur libero. Integer vitae justo eget magna fermentum. Donec pretium vulputate
+                                                sapien nec sagittis aliquam malesuada bibendum. Netus et malesuada fames ac turpis
+                                                egestas sed tempus urna.
+                                            </p>
+                                            <button class="btn more_info_btn">More Info</button>
+                                        </div>
+                                    </div> <!-- E-commerce Tab END-->
+
+                                    <div role="tabpanel" class="tab-pane fade services_tab_pane" id="cms">
+                                        <div class="title_text_and_button_holder">
+                                            <h5 class="mini_tab_title">CMS</h5>
+                                            <p class="mini_tab_text">
+                                                Tincidunt id aliquet risus feugiat in ante metus. Sed cras ornare arcu
+                                                dui vivamus arcu felis bibendum. Nunc id cursus metus aliquam eleifend
+                                                mi in nulla. Tempor id eu nisl nunc mi ipsum. Massa ultricies mi quis
+                                                hendrerit dolor magna. Sit amet justo donec enim diam.
+                                                Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla.
+                                                Lobortis scelerisque fermentum dui faucibus. Neque convallis a cras
+                                                semper auctor neque vitae tempus. Sit amet massa vitae tortor condimentum
+                                                lacinia quis vel eros. Vitae sapien pellentesque habitant morbi tristique
+                                                senectus. Faucibus in ornare quam viverra orci sagittis eu.
+                                            </p>
+                                            <button class="btn more_info_btn">More Info</button>
+                                        </div>
+                                    </div> <!-- CMS Tab END-->
+
+                                    <div role="tabpanel" class="tab-pane fade services_tab_pane" id="cloud">
+                                        <div class="title_text_and_button_holder">
+                                            <h5 class="mini_tab_title">Cloud Solutions</h5>
+                                            <p class="mini_tab_text">
+                                                Pellentesque habitant morbi tristique senectus et netus. Mauris ultrices
+                                                eros in cursus turpis massa. Gravida rutrum quisque non tellus orci ac
+                                                auctor augue. At tellus at urna condimentum mattis pellentesque id nibh
+                                                tortor. Ut lectus arcu bibendum at varius vel pharetra. Purus in massa
+                                                tempor nec feugiat nisl pretium fusce id. Pellentesque id nibh tortor
+                                                id aliquet. In hac habitasse platea dictumst quisque. Viverra suspendisse
+                                                potenti nullam ac tortor. Malesuada proin libero nunc consequat interdum
+                                                varius sit.
+                                            </p>
+                                            <button class="btn more_info_btn">More Info</button>
+                                        </div>
+                                    </div> <!-- Cloud Solutions Tab END-->
+
+                                    <div role="tabpanel" class="tab-pane fade services_tab_pane" id="analytics">
+                                        <div class="title_text_and_button_holder">
+                                            <h5 class="mini_tab_title">Analytics</h5>
+                                            <p class="mini_tab_text">
+                                                Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.
+                                                Non diam phasellus vestibulum lorem sed risus. Massa sapien faucibus et
+                                                molestie ac feugiat sed lectus. Tincidunt dui ut ornare lectus sit amet est.
+                                                Ac placerat vestibulum lectus mauris ultrices eros in. At tellus at urna
+                                                condimentum mattis pellentesque. Et tortor at risus viverra adipiscing at in tellus.
+                                                Placerat vestibulum lectus mauris ultrices eros in cursus. Cras sed felis eget
+                                                velit aliquet sagittis id consectetur purus. Velit scelerisque in dictum non
+                                                consectetur a erat nam. Feugiat in fermentum posuere urna nec tincidunt
+                                                praesent semper feugiat. Enim ut tellus elementum sagittis vitae et.
+                                                Lobortis elementum nibh tellus molestie nunc. Cursus euismod quis viverra
+                                                nibh cras pulvinar. Donec adipiscing tristique risus nec feugiat in fermentum
+                                                posuere. Et malesuada fames ac turpis egestas. Nisl tincidunt eget nullam non nisi est.
+                                                Amet venenatis urna cursus eget nunc scelerisque viverra mauris. Enim lobortis scelerisque
+                                                fermentum dui faucibus in. Et netus et malesuada fames ac turpis egestas.
+                                            </p>
+                                            <button class="btn more_info_btn">More Info</button>
+                                        </div>
+                                    </div> <!-- Analytics Tab END-->
+
+                                    <div role="tabpanel" class="tab-pane fade services_tab_pane" id="opendata">
+                                        <div class="title_text_and_button_holder">
+                                            <h5 class="mini_tab_title">Open Data</h5>
+                                            <p class="mini_tab_text">
+                                                Pellentesque habitant morbi tristique senectus et netus. Mauris ultrices
+                                                eros in cursus turpis massa. Gravida rutrum quisque non tellus orci ac
+                                                auctor augue. At tellus at urna condimentum mattis pellentesque id nibh
+                                                tortor. Ut lectus arcu bibendum at varius vel pharetra. Purus in massa
+                                                tempor nec feugiat nisl pretium fusce id. Pellentesque id nibh tortor
+                                                id aliquet. In hac habitasse platea dictumst quisque. Viverra suspendisse
+                                                potenti nullam ac tortor. Malesuada proin libero nunc consequat interdum
+                                                varius sit.
+                                            </p>
+                                            <button class="btn more_info_btn">More Info</button>
+                                        </div>
+                                    </div> <!-- Cloud Solutions Tab END-->
+
+                                    <div role="tabpanel" class="tab-pane fade services_tab_pane" id="ai">
+                                        <div class="title_text_and_button_holder">
+                                            <h5 class="mini_tab_title">AI</h5>
+                                            <p class="mini_tab_text">
+                                                Enim sed faucibus turpis in eu mi bibendum neque. Tellus at urna condimentum
+                                                mattis pellentesque id nibh tortor. Platea dictumst quisque sagittis purus sit.
+                                                Malesuada proin libero nunc consequat interdum. Id cursus metus aliquam eleifend.
+                                                Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat.
+                                                Consectetur lorem donec massa sapien faucibus et. Tincidunt dui ut ornare lectus
+                                                sit amet est placerat in. Sit amet facilisis magna etiam tempor orci eu.
+                                            </p>
+                                            <button class="btn more_info_btn">More Info</button>
+                                        </div>
+                                    </div> <!-- AI Tab END-->
+
+                                    <div role="tabpanel" class="tab-pane fade services_tab_pane" id="ar">
+                                        <div class="title_text_and_button_holder">
+                                            <h5 class="mini_tab_title">Augmented Reality</h5>
+                                            <p class="mini_tab_text">
+                                                Nibh mauris cursus mattis molestie a iaculis at. Euismod elementum nisi
+                                                quis eleifend quam adipiscing. Eget velit aliquet sagittis id consectetur
+                                                purus ut faucibus pulvinar. Enim eu turpis egestas pretium aenean.
+                                                Eget lorem dolor sed viverra ipsum nunc aliquet bibendum. Nisl tincidunt
+                                                eget nullam non nisi. Integer malesuada nunc vel risus commodo viverra
+                                                maecenas accumsan lacus. Pretium aenean pharetra magna ac placerat
+                                                vestibulum lectus mauris. Donec enim diam vulputate ut pharetra sit.
+                                                Nisi vitae suscipit tellus mauris a diam maecenas.
+                                            </p>
+                                            <button class="btn more_info_btn">More Info</button>
+                                        </div>
+                                    </div> <!-- AR Tab END-->
+
+                                    <div role="tabpanel" class="tab-pane fade services_tab_pane" id="bigdata">
+                                        <div class="title_text_and_button_holder">
+                                            <h5 class="mini_tab_title">Big Data</h5>
+                                            <p class="mini_tab_text">
+                                                Pellentesque habitant morbi tristique senectus et netus. Mauris ultrices
+                                                eros in cursus turpis massa. Gravida rutrum quisque non tellus orci ac
+                                                auctor augue. At tellus at urna condimentum mattis pellentesque id nibh
+                                                tortor. Ut lectus arcu bibendum at varius vel pharetra. Purus in massa
+                                                tempor nec feugiat nisl pretium fusce id. Pellentesque id nibh tortor
+                                                id aliquet. In hac habitasse platea dictumst quisque. Viverra suspendisse
+                                                potenti nullam ac tortor. Malesuada proin libero nunc consequat interdum
+                                                varius sit.
+                                            </p>
+                                            <button class="btn more_info_btn">More Info</button>
+                                        </div>
+                                    </div> <!-- Cloud Solutions Tab END-->
+
+                                    <div role="tabpanel" class="tab-pane fade services_tab_pane" id="misc">
+                                        <div class="title_text_and_button_holder">
+                                            <h5 class="mini_tab_title">API</h5>
+                                            <p class="mini_tab_text">
+                                                Orci eu lobortis elementum nibh tellus. Nulla facilisi morbi tempus iaculis urna id.
+                                                Imperdiet dui accumsan sit amet nulla facilisi. A arcu cursus vitae congue mauris
+                                                rhoncus aenean vel elit. Nec dui nunc mattis enim ut tellus. Risus pretium quam
+                                                vulputate dignissim suspendisse in est ante in. Neque laoreet suspendisse interdum
+                                                consectetur libero. Integer vitae justo eget magna fermentum. Donec pretium vulputate
+                                                sapien nec sagittis aliquam malesuada bibendum. Netus et malesuada fames ac turpis
+                                                egestas sed tempus urna.
+                                            </p>
+                                            <button class="btn more_info_btn">More Info</button>
+                                        </div>
+                                    </div> <!-- Misc Tab END-->
+
+                                </div>
+                            </div> <!-- Aux Textual Content Area END -->
+
+                            <div class="col-sm-8 mini_tabs_area">
+                                <ul class="nav mini_tabs" role="tablist">
+                                    <li role="presentation" class="col-sm-3 mini_tab_btn active">
+                                        <a href="#seo" aria-controls="seo" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd seo"></span>
+                                                <h6 class="minitab_title">SEO</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
+                                        <a href="#api" aria-controls="api" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd api"></span>
+                                                <h6 class="minitab_title">API</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
+                                        <a href="#uiux" aria-controls="uiux" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd uiux"></span>
+                                                <h6 class="minitab_title">UI/UX</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
+                                        <a href="#ecommerce" aria-controls="ecommerce" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd ecommerce"></span>
+                                                <h6 class="minitab_title">E-Commerce</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+
+                                    <!-- Row 2 -->
+
+                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
+                                        <a href="#cms" aria-controls="cms" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd cms"></span>
+                                                <h6 class="minitab_title">CMS</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
+                                        <a href="#cloud" aria-controls="cloud" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd cloud"></span>
+                                                <h6 class="minitab_title">Cloud Solutions</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
+                                        <a href="#analytics" aria-controls="analytics" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd analytics"></span>
+                                                <h6 class="minitab_title">Analytics</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
+                                        <a href="#opendata" aria-controls="opendata" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd opendata"></span>
+                                                <h6 class="minitab_title">Open Data</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+
+                                    <!-- Row 3 -->
+                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
+                                        <a href="#ai" aria-controls="ai" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd ai"></span>
+                                                <h6 class="minitab_title">AI</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
+                                        <a href="#ar" aria-controls="ar" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd ar"></span>
+                                                <h6 class="minitab_title">AR</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
+                                        <a href="#bigdata" aria-controls="bigdata" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd bigdata"></span>
+                                                <h6 class="minitab_title">Big Data</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
+                                        <a href="#misc" aria-controls="misc" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd misc"></span>
+                                                <h6 class="minitab_title">Misc</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> <!-- Mini Tabs Area END -->
+                        </div> <!-- Main Tab 1 (Software Architecture) Content END -->
+
+                        <div role="tabpanel" class="tab-pane" id="mobileAndApps">
+                            Content to be filled later
+                        </div> <!-- Main Tab 2 (Mobile & App) Content END -->
+
+                        <div role="tabpanel" class="tab-pane" id="adobeAem">
+                            Content to be filled later
+                        </div> <!-- Main Tab 3 (Adobe AEM) Content END -->
+
+                    </div> <!-- Main Tab Panes END -->
+                </div>
+            </div>
+        </div>
+    </div> <!-- Services Tabs Area END -->
+
+    <div class="stats_area">
+        <div class="container">
+            <div class="row">
+                <section class="ttl_holder text-center">
+                    <h2 class="section_ttl">Numbers More Eloquent Than Words</h2>
+                </section>
+                <div class="stats_circles_holder">
+
+                    <div class="col-sm-3 centralize">
+                        <div class="stats_box text-center">
+                            <div class="outermost_circle">
+                                <div class="mid_circle">
+                                    <div class="central_circle">
+                                        <span class="opaque_logo text-center"></span>
+                                        <p class="text-center stat_number counter">428</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="stats_title">Successful Projects</h4>
+                            <hr class="micro_hr">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 centralize">
+                        <div class="stats_box text-center">
+                            <div class="outermost_circle">
+                                <div class="mid_circle">
+                                    <div class="central_circle">
+                                        <span class="opaque_logo text-center"></span>
+                                        <p class="text-center stat_number counter">117</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="stats_title">Happy Clients</h4>
+                            <hr class="micro_hr">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 centralize">
+                        <div class="stats_box text-center">
+                            <div class="outermost_circle">
+                                <div class="mid_circle">
+                                    <div class="central_circle">
+                                        <span class="opaque_logo text-center"></span>
+                                        <p class="text-center stat_number counter">310</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="stats_title">Employees</h4>
+                            <hr class="micro_hr">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 centralize">
+                        <div class="stats_box text-center">
+                            <div class="outermost_circle">
+                                <div class="mid_circle">
+                                    <div class="central_circle">
+                                        <span class="opaque_logo text-center"></span>
+                                        <p class="text-center stat_number counter">29</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="stats_title">Job Positions</h4>
+                            <hr class="micro_hr">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Stats Area END -->
+
+    <div class="team_area">
+        <div class="container">
+            <div class="row">
+                <div class="personal_card_holder">
+                    <div class="col-sm-3 team_member_image christoph"></div>
+                        <div class="col-sm-6 team_member_card_body">
+                            <div class="team_member_details_holder">
+                                <span class="logo_ghost_1"></span>
+                                <h4 class="team_member_name">Christoph Thommen</h4>
+                                <h6 class="team_member_position">Manager Switzerland</h6>
+                                <hr>
+                                <section class="team_member_socials_holder">
+                                    <ul class="team_member_socials">
+                                        <li><a href='mailto:example@yahoo.com'><i class="fas fa-at"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-xing"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                </div> <!-- Christoph Card END -->
+
+                <div class="clearfix"></div>
+
+                <div class="personal_card_holder_2">
+                    <div class="col-sm-offset-3 col-sm-6 team_member_card_body_2">
+                        <div class="team_member_details_holder_2">
+                            <span class="logo_ghost_2"></span>
+                            <h4 class="team_member_name_2">Rade Georgiev</h4>
+                            <h6 class="team_member_position_2">Manager Skopje</h6>
+                            <hr>
+                            <section class="team_member_socials_holder">
+                                <ul class="team_member_socials_2">
+                                    <li><a href='mailto:example@yahoo.com'><i class="fas fa-at"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-xing"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 team_member_image rade"></div>
+                </div> <!-- Rade Card END -->
+            </div>
+        </div>
+        <div class="decorative_rectangles"></div>
+    </div> <!-- Team Area END-->
+
+    <div class="jobs_area">
+        <div class="container">
+            <div class="row">
+                <section class="ttl_holder text-center">
+                    <h2 class="section_ttl">We Are Hiring</h2>
+                </section>
+                <div class="jobs_stripes_holder">
+
+                    <div class="well job_well light">
+                        <section class="col-sm-3 job_image_box">
+                            <span class="jobicon"><i class="fab fa-react"></i></span>
+                            <img src="img/job_image_1.jpeg" class="job_image img-responsive" alt="CodeFlair job background">
+                        </section>
+                        <section class="col-sm-6 job_description_holder">
+                            <h4 class="job_title">Senior React JS Developer</h4>
+                            <small class="job_location"><i class="fas fa-map-marker-alt"></i>Skopje HQ</small>
+                            <section class="job_description_text_box">
+                                <p class="job_description_text">
+                                    Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Sem nulla pharetra
+                                    diam sit amet nisl suscipit. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
+                                    At auctor urna nunc id cursus metus aliquam…
+                                </p>
+                            </section>
+                        </section>
+                        <section class="col-sm-3 apply_button_holder">
+                            <button class="btn job_apply_btn">Apply Now</button>
+                        </section>
+                    </div> <!-- Job Stripe END -->
+
+                    <div class="well job_well nonlight">
+                        <section class="col-sm-3 job_image_box">
+                            <span class="jobicon"><i class="fab fa-adobe"></i></span>
+                            <img src="img/job_image_2.jpeg" class="job_image img-responsive" alt="CodeFlair job background">
+                        </section>
+                        <section class="col-sm-6 job_description_holder">
+                            <h4 class="job_title">Adobe Experience Manager</h4>
+                            <small class="job_location"><i class="fas fa-map-marker-alt"></i>Skopje HQ</small>
+                            <section class="job_description_text_box">
+                                <p class="job_description_text">
+                                    Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Sem nulla pharetra
+                                    diam sit amet nisl suscipit. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
+                                    At auctor urna nunc id cursus metus aliquam…
+                                </p>
+                            </section>
+                        </section>
+                        <section class="col-sm-3 apply_button_holder">
+                            <button class="btn job_apply_btn">Apply Now</button>
+                        </section>
+                    </div> <!-- Job Stripe END -->
+
+                    <div class="well job_well light">
+                        <section class="col-sm-3 job_image_box">
+                            <span class="jobicon"><i class="fab fa-python"></i></span>
+                            <img src="img/job_image_3.jpg" class="job_image img-responsive" alt="CodeFlair job background">
+                        </section>
+                        <section class="col-sm-6 job_description_holder">
+                            <h4 class="job_title">Python Developer</h4>
+                            <small class="job_location"><i class="fas fa-map-marker-alt"></i>Basel HQ</small>
+                            <section class="job_description_text_box">
+                                <p class="job_description_text">
+                                    Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Sem nulla pharetra
+                                    diam sit amet nisl suscipit. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
+                                    At auctor urna nunc id cursus metus aliquam…
+                                </p>
+                            </section>
+                        </section>
+                        <section class="col-sm-3 apply_button_holder">
+                            <button class="btn job_apply_btn">Apply Now</button>
+                        </section>
+                    </div> <!-- Job Stripe END -->
+
+                    <div class="well job_well nonlight">
+                        <section class="col-sm-3 job_image_box">
+                            <span class="jobicon"><i class="fab fa-java"></i></span>
+                            <img src="img/job_imahe_4.jpg" class="job_image img-responsive" alt="CodeFlair job background">
+                        </section>
+                        <section class="col-sm-6 job_description_holder">
+                            <h4 class="job_title">Java Developer</h4>
+                            <small class="job_location"><i class="fas fa-map-marker-alt"></i>Skopje HQ</small>
+                            <section class="job_description_text_box">
+                                <p class="job_description_text">
+                                    Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Sem nulla pharetra
+                                    diam sit amet nisl suscipit. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
+                                    At auctor urna nunc id cursus metus aliquam…
+                                </p>
+                            </section>
+                        </section>
+                        <section class="col-sm-3 apply_button_holder">
+                            <button class="btn job_apply_btn">Apply Now</button>
+                        </section>
+                    </div> <!-- Job Stripe END -->
+
+                    <div class="well job_well light">
+                        <section class="col-sm-3 job_image_box">
+                            <span class="jobicon"><i class="fab fa-sketch"></i></span>
+                            <img src="img/job_image_1.jpeg" class="job_image img-responsive" alt="CodeFlair job background">
+                        </section>
+                        <section class="col-sm-6 job_description_holder">
+                            <h4 class="job_title">UI/UX Specialist (Sketch)</h4>
+                            <small class="job_location"><i class="fas fa-map-marker-alt"></i>Basel HQ</small>
+                            <section class="job_description_text_box">
+                                <p class="job_description_text">
+                                    Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Sem nulla pharetra
+                                    diam sit amet nisl suscipit. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
+                                    At auctor urna nunc id cursus metus aliquam…
+                                </p>
+                            </section>
+                        </section>
+                        <section class="col-sm-3 apply_button_holder">
+                            <button class="btn job_apply_btn">Apply Now</button>
+                        </section>
+                    </div> <!-- Job Stripe END -->
+
+                </div>
+            </div>
+        </div>
+    </div> <!-- Jobs Area END -->
+
+    <div class="gallery_slider_area">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="codeflair_home_slider">
+                    <div class="cf_slide" style="background: url('img/slide_01.jpg') no-repeat; background-size: cover;"></div>
+                    <div class="cf_slide" style="background: url('img/slide_02.jpg') no-repeat; background-size: cover;"></div>
+                    <div class="cf_slide" style="background: url('img/slide_03.jpg') no-repeat; background-size: cover;"></div>
+                    <div class="cf_slide" style="background: url('img/slide_04.jpg') no-repeat; background-size: cover;"></div>
+                    <div class="cf_slide" style="background: url('img/slide_05.jpg') no-repeat; background-size: cover;"></div>
+                    <div class="cf_slide" style="background: url('img/slide_06.jpg') no-repeat; background-size: cover;"></div>
+                    <div class="cf_slide" style="background: url('img/slide_07.jpg') no-repeat; background-size: cover;"></div>
+                    <div class="cf_slide" style="background: url('img/slide_08.jpg') no-repeat; background-size: cover;"></div>
+                    <div class="cf_slide" style="background: url('img/slide_09.jpg') no-repeat; background-size: cover;"></div>
+                </div>
+
+            </div>
+        </div>
+    </div> <!-- Slider END -->
+
+    <div class="news_area">
+        <div class="container">
+            <div class="row">
+                <section class="ttl_holder text-center">
+                    <h2 class="section_ttl">Latest News & Blogs</h2>
+                </section>
+                <div class="news_boxes_holder">
+
+                    <div class="col-sm-4 news_box_holder">
+                        <div class="newsbox">
+                            <section class="news_thumbnail">
+                                <img src="img/news_image_01.jpeg" class="img-responsive news_image" alt="Smiling co-workers negotiate">
+                            </section>
+                            <section class="news_textual_content_holder">
+                                <h3 class="news_title">Some News Title Goes Here</h3>
+                                <hr class="news_hr">
+                                <p class="news_text">
+                                    Velit ut tortor pretium viverra suspendisse potenti nullam. Purus sit amet luctus
+                                    venenatis lectus magna fringilla. Mauris augue neque gravida in fermentum. Semper
+                                    feugiat nibh sed pulvinar proin gravida hendrerit lectus. Cursus in hac habitasse
+                                    platea dictumst.
+                                </p>
+                                <button class="btn read_nore_news_btn">Read More</button>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 news_box_holder">
+                        <div class="newsbox">
+                            <section class="news_thumbnail">
+                                <img src="img/news_image_02.jpeg" class="img-responsive news_image" alt="Smiling co-workers negotiate">
+                            </section>
+                            <section class="news_textual_content_holder">
+                                <h3 class="news_title">Another Title Placeholder</h3>
+                                <hr class="news_hr">
+                                <p class="news_text">
+                                    At in tellus integer feugiat scelerisque varius morbi enim nunc. Porta non pulvinar
+                                    neque laoreet. Mattis aliquam faucibus purus in massa. At in tellus integer feugiat
+                                    scelerisque varius morbi enim nunre.
+                                </p>
+                                <button class="btn read_nore_news_btn">Read More</button>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 news_box_holder">
+                        <div class="newsbox">
+                            <section class="news_thumbnail">
+                                <img src="img/news_image_03.jpeg" class="img-responsive news_image" alt="Smiling co-workers negotiate">
+                            </section>
+                            <section class="news_textual_content_holder">
+                                <h3 class="news_title">One More News Title</h3>
+                                <hr class="news_hr">
+                                <p class="news_text">
+                                    Est placerat in egestas erat imperdiet sed euismod nisi. Senectus et netus et malesuada
+                                    fames ac. Velit ut tortor pretium viverra suspendisse potenti nullam. Purus sit amet
+                                    luctus venenatis lectus magna fringilla.Est placerat in egestas erat imperdiet sed euismod.
+                                </p>
+                                <button class="btn read_nore_news_btn">Read More</button>
+                            </section>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="network_graphics"></div>
+    </div> <!-- News Area END -->
+
+    <div class="contact_area">
+        <div class="container">
+            <div class="row">
+                <section class="ttl_holder text-center">
+                    <h2 class="section_ttl whitener">Get in Touch</h2>
+                </section>
+                <div class="contact_form_holder">
+                    <form role="form" id="codeflairContactForm" class="cf_contact_form">
+                        <div class="form-group cf_form_group">
+                            <label for="yourName"></label>
+                            <input type="text" class="form-control cf_contact_input" id="yourName" placeholder="Name" onfocus="placeholder='' " onblur="placeholder='Name' ">
+                        </div>
+                        <div class="form-group cf_form_group">
+                            <label for="yourEmail"></label>
+                            <input type="email" class="form-control cf_contact_input" id="yourEmail" placeholder="Email" onfocus="placeholder='' " onblur="placeholder='Email' ">
+                        </div>
+                        <div class="form-group cf_form_group">
+                            <label for="yourMessage"></label>
+                            <textarea class="form-control cf_contact_txt" id="yourMessage" placeholder="Message" onfocus="placeholder='' " onblur="placeholder='Message' "></textarea>
+                        </div>
+                        <div class="submit_btn_holder text-center">
+                            <button type="submit" class="btn submit_form_btn">Submit</button>
+                        </div>
+                    </form>
+                </div> <!-- Form Holder END -->
+
+                <div class="two_mini_location_boxes_holder">
+                    <div class="col-sm-6 mini_location_box_holder">
+                        <div class="mini_location_box">
+                            <section class="col-sm-5 pseudomap basel"></section>
+                            <section class="col-sm-7 pseudomap_details_holder">
+                                <h4 class="mini_location_ttl">Basel <span>HQ</span></h4>
+                                <span class="mini_location_aux_data"><i class="fas fa-map-marker-alt"></i>Sissacherstrasse 20, CH-4460</span>
+                                <span class="mini_location_aux_data"><i class="fas fa-phone rotator"></i>+41 61 508 50 65</span>
+                                <span class="mini_location_aux_data"><i class="fas fa-paper-plane"></i>info@example.com</span>
+                                <button class="btn mini_location_more_details_btn">More Details</button>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 mini_location_box_holder">
+                        <div class="mini_location_box">
+                            <section class="col-sm-7 pseudomap_details_holder_2">
+                                <h4 class="mini_location_ttl">Skopje <span>HQ</span></h4>
+                                <span class="mini_location_aux_data"><i class="fas fa-map-marker-alt"></i>Sissacherstrasse 20, CH-4460</span>
+                                <span class="mini_location_aux_data"><i class="fas fa-phone rotator"></i>+41 61 508 50 65</span>
+                                <span class="mini_location_aux_data"><i class="fas fa-paper-plane"></i>info@example.com</span>
+                                <button class="btn mini_location_more_details_btn">More Details</button>
+                            </section>
+                            <section class="col-sm-5 pseudomap skopje"></section>
+                        </div>
+                    </div>
+                </div> <!-- 2 Mini Location Boxes Holder END -->
+
+            </div>
+        </div>
+    </div> <!-- Contact Area END -->
+
+    <div class="blank_pre_footer_area"></div>
+
+    <footer class="codeflair_footer">
+        <div class="container-fluid">
+            <div class="row">
+                <section class="col-sm-3 footer_logo_holder">
+                    <img src="img/codeflair-weiss-vector.svg" class="footer_logo img-responsive" alt="CodeFlair footer logo">
+                </section>
+                <section class="col-sm-3 footer_links_holder">
+                    <ul class="footer_linx">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">News & Blogs</a></li>
+                    </ul>
+                </section>
+                <section class="col-sm-3 footer_links_holder">
+                    <ul class="footer_linx">
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Switzerland Office</a></li>
+                        <li><a href="#">Macedonia Office</a></li>
+                    </ul>
+                </section>
+                <section class="col-sm-3 footer_links_holder">
+                    <ul class="footer_linx">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Imprint</a></li>
+                    </ul>
+                </section>
+                <div class="col-sm-12 bottommost_stripe">
+                    <section class="bottommost_text_holder">
+                        <small>&copy; CodeFlair AG, All Rights Reserved</small>
+                    </section>
+                    <section class="bottommost_socials_holder">
+                        <ul class="bottommost_socials">
+                            <li><a href="#"><i class="fab fa-xing-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="footer_transparent_logo"></div>
+    </footer>
+
+</div> <!-- #Main END-->
+
+<!-- jQuery'z -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+<!-- JSz -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="js/codeflair.js"></script>
+
+</body>
+
+</html>

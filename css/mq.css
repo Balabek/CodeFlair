@@ -1,0 +1,143 @@
+/*
+
+▒█▀▄▀█ █▀▀ █▀▀▄ ░▀░ █▀▀█ 　 ▒█▀▀█ █░░█ █▀▀ █▀▀█ ░▀░ █▀▀ █▀▀
+▒█▒█▒█ █▀▀ █░░█ ▀█▀ █▄▄█ 　 ▒█░▒█ █░░█ █▀▀ █▄▄▀ ▀█▀ █▀▀ ▀▀█
+▒█░░▒█ ▀▀▀ ▀▀▀░ ▀▀▀ ▀░░▀ 　 ░▀▀█▄ ░▀▀▀ ▀▀▀ ▀░▀▀ ▀▀▀ ▀▀▀ ▀▀▀
+
+*/
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* >>>>>>>> I M P O R T A N T ! <<<<<<<<< */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    #codeFlairCollapse {
+        position: absolute;
+        width: 100%;
+        margin-top: 24px;
+        background: #f8f8f8;
+        border-top: 2px solid #CE2128;
+        padding-bottom: 6px;
+        padding-top: 6px;
+        z-index: 22;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Navbar ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 906px){
+    ul.codeflair_main_menu li a {font-size: 0.8rem;}
+}
+
+@media screen and (max-width: 821px){
+    .nav_main_logo {width: 175px; position: relative; top: 6px;}
+    .codeflair_navbar.shrinked img.nav_main_logo {top: initial;}
+}
+
+@media screen and (max-width: 785px){
+    .nav_main_logo {width: 150px; top: 13px;}
+    .codeflair_navbar.shrinked img.nav_main_logo {top: initial;}
+}
+
+@media screen and (max-width: 767px){
+    ul.codeflair_main_menu li {
+        text-align: right;
+    }
+
+    ul.codeflair_main_menu li a {
+        display: inline-block;
+    }
+
+    ul.codeflair_main_menu {
+        padding-top: 2px;
+        padding-bottom: 32px;
+    }
+
+    .expanding-sf {
+        height: initial;
+        margin-top: 0;
+        position: relative;
+        top: -100px;
+        float: right;
+        right: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Header ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
