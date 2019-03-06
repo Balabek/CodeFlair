@@ -73,8 +73,12 @@ button {border-radius: 2px;}
     background-color: rgba(247,247,247,0.9);
 }
 
+.codeflair_navbar.shrinked #codeFlairCollapse {
+    margin-top: 8px;
+}
+
 .codeflair_navbar.shrinked ul.codeflair_main_menu {
-    padding-top: 10px;
+    padding-top: 1px;
 }
 
 .codeflair_navbar.shrinked img.nav_main_logo {
@@ -259,19 +263,10 @@ ul.codeflair_main_menu li a:hover {
 
 /* Expandable Search END */
 
+
 .navbar-toggle {
     margin-top: 33px;
     border: none;
-
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #424C5E;
 
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -279,6 +274,47 @@ ul.codeflair_main_menu li a:hover {
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
+
+.codeflair_navbar.shrinked .navbar-toggle {
+    margin-top: 16px;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:active {
+    background: transparent;
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CE2128;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(2) {top: 1px;}
+.navbar-toggle .icon-bar:nth-of-type(3) {top: 2px;}
+.navbar-toggle .icon-bar:nth-of-type(4) {top: 3px;}
+
+.navbar-toggle .icon-bar {
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+    top: 6px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+    background-color: transparent;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.navbar-toggle.active .icon-bar:nth-of-type(4) {
+    top: -6px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 
 .rotator {
     -webkit-transform: rotateZ(90deg);
@@ -330,7 +366,7 @@ ul.codeflair_main_menu li a:hover {
 .show {visibility: visible !important;}
 
 
-.hole {
+.mask {
     position: absolute;
     z-index: 5;
     width: 100%;
@@ -523,6 +559,10 @@ ul.client_logos {
     list-style-type: none;
     float: left;
     margin-right: 60px;
+}
+
+.client_logos li:last-child {
+    margin-right: 0;
 }
 
 span.client_logo {
@@ -1365,12 +1405,14 @@ button.job_apply_btn:hover, button.job_apply_btn:focus {
 }
 
 .newsbox {
+    display: block;
     position: relative;
     z-index: 5;
-    height: 475px;
+    min-height: 500px;
+    height: auto;
     background: #ffffff;
     border-radius: 2px;
-    padding: 0;
+    padding: 0 0 20px 0;
 
     -webkit-transition: all 0.4s ease-in;
     -moz-transition: all 0.4s ease-in;
@@ -1404,6 +1446,7 @@ h3.news_title {
     color: #000000;
     margin-top: 0;
     margin-bottom: 14px;
+    height: auto;
 }
 
 hr.news_hr {
@@ -1435,7 +1478,7 @@ button.read_nore_news_btn {
     color: #08415C;
     text-transform: uppercase;
     position: relative;
-    bottom: -16px;
+    bottom: -10px;
 
     -webkit-transition: all 0.4s ease-in;
     -moz-transition: all 0.4s ease-in;
@@ -1458,6 +1501,33 @@ button.read_nore_news_btn:hover, button.read_nore_news_btn:focus {
     background: url('../img/network.png') center center no-repeat;
     background-size: contain;
     opacity: 0.5;
+}
+
+.news_image {
+    width: 100%;
+    padding: 0;
+    height: 188px;
+}
+
+.author_image_inner_box {
+    position: relative;
+    min-height: 50px;
+}
+
+span.author_image {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-right: 4px;
+    border-radius: 100%;
+}
+
+small.author_name {
+    font-size: 0.77rem;
+    text-align: left;
+    color: #666666;
+    position: relative;
+    top: -16px;
 }
 
 
@@ -1782,7 +1852,7 @@ ul.bottommost_socials li a:hover, ul.bottommost_socials li a:focus {
 .footer_transparent_logo {
     display: block;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     left: 0;
     right: 0;
     top: 24px;

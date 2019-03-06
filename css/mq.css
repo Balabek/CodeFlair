@@ -31,17 +31,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 /* =========== Navbar ========== */
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
@@ -102,42 +91,405 @@
 
 /* >>>>> SM/XS <<<<< */
 
+@media screen and (max-width: 767px){
+    .mask {width: 150%;}
+    .h_banner {width: 65%;}
+
+    .carousel .item {height: 570px;}
+}
+
+@media screen and (max-width: 575px){
+    h2.header_title {font-size: 1.88rem;}
+    p.header_teaser_text {font-size: 1.1rem;}
+}
+
+@media screen and (max-width: 550px){
+    .slide_image {height: 600px;}
+}
+
+@media screen and (max-width: 440px){
+    .mask {width: 175%;}
+    .slide_image {height: 500px;}
+}
+
+@media screen and (max-width: 420px){
+    h2.header_title {font-size: 1.66rem;}
+    p.header_teaser_text {font-size: 1.022rem;}
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Client Logos ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1397px){
+    ul.client_logos {width: 82%;}
+}
+
+@media screen and (max-width: 1329px){
+    ul.client_logos {width: 90%;}
+}
+
+@media screen and (max-width: 1211px){
+    .client_logos_holder {padding-top: 1px;}
+    ul.client_logos {width: 95%;}
+}
+
+@media screen and (max-width: 1148px){
+    ul.client_logos {width: 99%;}
+}
+
+@media screen and (max-width: 1101px){
+    span.client_logo {width: 140px;}
+}
+
+@media screen and (max-width: 1050px){
+    span.client_logo {width: 130px;}
+}
+
+@media screen and (max-width: 939px){
+    span.client_logo {width: 120px;}
+}
+
+@media screen and (max-width: 888px){
+    span.client_logo {width: 110px;}
+}
+
+@media screen and (max-width: 838px){
+    .client_logos li {margin-right: 40px;}
+}
+
+@media screen and (max-width: 757px){
+    span.client_logo {width: 150px;}
+
+    .client_logos_holder {z-index: 9; top: -75px;}
+}
+
+@media screen and (max-width: 595px){
+    span.client_logo {width: 140px;}
+}
+
+@media screen and (max-width: 545px){
+    ul.client_logos {width: 85%;}
+}
+
+@media screen and (max-width: 470px){
+    ul.client_logos {width: 92%;}
+    .client_logos_holder {top: -120px;}
+}
+
+@media screen and (max-width: 434px){
+    ul.client_logos {width: 100%;}
+    .client_logos_holder {top: -130px;}
+}
+
+@media screen and (max-width: 399px){
+    span.client_logo {width: 130px;}
+}
+
+@media screen and (max-width: 379px){
+    span.client_logo {width: 120px;}
+}
+
+@media screen and (max-width: 359px){
+    span.client_logo {width: 110px;}
+}
+
+@media screen and (max-width: 349px){
+    span.client_logo {width: 100px;}
+    .client_logos li {margin-right: 30px;}
+}
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Service Tabs ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    li.main_tab_btn a {width: 296px;}
+}
+
+@media screen and (max-width: 991px){
+    li.main_tab_btn a {width: 226px;}
+    h5.main_tab_title {font-size: 1.2rem;}
+    span.main_tab_icon {height: 50px;}
+}
+
+@media screen and (max-width: 735px){
+    ul.main_tabs {width: 91%;}
+    li.main_tab_btn a {width: 215px;}
+}
+
+@media screen and (max-width: 715px){
+    ul.main_tabs {width: 92%;}
+    li.main_tab_btn a {width: 205px;}
+}
+
+@media screen and (max-width: 674px){
+    li.main_tab_btn a {width: 190px;}
+}
+
+@media screen and (max-width: 626px){
+    li.main_tab_btn {width: 100%;}
+    li.main_tab_btn a {width: 95%; margin-bottom: 3px;}
+
+    .main_tab_content {padding-top: 30px;}
+    .mini_tabs_area {padding-left: 2px;}
+}
+
+@media screen and (max-width: 555px){
+    .mini_tab_btn {width: 33%;}
+    .textual_content_area {padding-top: 24px;}
+}
+
+@media screen and (max-width: 420px){
+    li.mini_tab_btn a {width: 120px;}
+}
+
+@media screen and (max-width: 399px){
+    .mini_tab_btn {width: 49%;}
+    li.mini_tab_btn a {width: 150px;}
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Statistics ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .stats_area {min-height: 485px;}
+    .outermost_circle {width: 150px; height: 150px;}
+    .mid_circle {width: 130px; height: 130px;}
+    .central_circle {width: 100px; height: 100px;}
+    span.opaque_logo {height: 67px; width: 100px;}
+    p.stat_number {font-size: 3rem; height: 55px;}
+    h4.stats_title {font-size: 1.2rem;}
+}
+
+@media screen and (max-width: 767px){
+    .stats_area {padding-bottom: 55px;}
+    .stats_circles_holder {padding-left: 100px;}
+    .outermost_circle {width: 180px; height: 180px;}
+    .mid_circle {width: 172px; height: 172px;}
+    .central_circle {width: 150px; height: 150px;}
+    span.opaque_logo {height: 115px; width: 115px;}
+    p.stat_number {font-size: 4rem; height: 76px;}
+    h4.stats_title {font-size: 1.4rem;}
+}
+
+@media screen and (max-width: 620px){
+    .stats_circles_holder {padding-left: 60px;}
+}
+
+@media screen and (max-width: 555px){
+    .stats_circles_holder {padding-left: 30px;}
+}
+
+@media screen and (max-width: 480px){
+    .stats_circles_holder {padding-left: 10px;}
+}
+
+@media screen and (max-width: 420px){
+    h2.section_ttl {font-size: 1.8rem;}
+
+    .outermost_circle {width: 150px; height: 150px;}
+    .mid_circle {width: 130px; height: 130px;}
+    .central_circle {width: 100px; height: 100px;}
+    span.opaque_logo {height: 67px; width: 100px;}
+    p.stat_number {font-size: 3rem; height: 55px;}
+    h4.stats_title {font-size: 1.2rem;}
+}
+
+@media screen and (max-width: 360px){
+    .stats_circles_holder {padding-left: 8px;}
+
+    .outermost_circle {width: 130px; height: 130px;}
+    .mid_circle {width: 110px; height: 110px;}
+    .central_circle {width: 90px; height: 90px;}
+    span.opaque_logo {height: 55px; width: 100px;}
+    p.stat_number {font-size: 3rem; height: 55px;}
+    h4.stats_title {font-size: 1.1rem;}
+}
+
+@media screen and (max-width: 340px){
+    .stats_circles_holder {padding-left: 2px;}
+    h4.stats_title {font-size: 1rem;}
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Team ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .decorative_rectangles {height: 500px;}
+}
+
+@media screen and (max-width: 991px){
+    .decorative_rectangles {height: 460px;}
+}
+
+@media screen and (max-width: 899px){
+    .decorative_rectangles {height: 390px; width: 97%;}
+}
+
+@media screen and (max-width: 767px){
+    .team_area {min-height: 1140px;}
+    .personal_card_holder {width: 55%; margin: 0 auto;}
+    .personal_card_holder_2 {width: 55%; margin: 0 auto;}
+
+    .team_member_card_body {display: block; padding-top: 32px; height: 180px;}
+    span.logo_ghost_1 {bottom: 5px; width: 150px; height: 166px;}
+
+    .team_member_card_body_2 {display: block; padding-top: 32px; height: 180px;}
+    span.logo_ghost_2 {bottom: 5px; width: 150px; height: 166px;}
+
+    .decorative_rectangles {
+        top: 31%;
+        height: 365px;
+        width: 97%;
+    }
+
+    .team_area {padding-top: 55px;}
+}
+
+@media screen and (max-width: 555px){
+    .personal_card_holder {width: 75%;}
+    .personal_card_holder_2 {width: 75%;}
+}
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Jobs ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .jobs_stripes_holder {width: 100%;}
+    .job_image {height: 100vh; width: 100vw; object-fit: cover;}
+}
+
+@media screen and (max-width: 767px){
+    .jobs_stripes_holder {width: 85%;}
+    .job_image {height: initial; width: initial; object-fit: initial;}
+
+    .job_image_box {border-top-left-radius: 4px; border-bottom-left-radius: 0; border-top-right-radius: 4px;}
+    .job_well {display: table;}
+    .apply_button_holder {height: auto; padding-bottom: 22px;}
+
+    p.job_description_text {margin-bottom: 22px;}
+}
+
+@media screen and (max-width: 420px){
+    p.job_description_text {font-size: 0.88rem;}
+}
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== News ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    h3.news_title {font-size: 1rem;}
+}
+
+@media screen and (max-width: 767px){
+    .news_boxes_holder {margin: 0 auto; width: 85%;}
+    .newsbox {margin-bottom: 22px;}
+}
+
+@media screen and (max-width: 420px){
+    .news_boxes_holder {margin: 0 auto; width: 92%;}
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Contact ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .contact_form_holder {width: 85%;}
+    .mini_location_box {height: 270px;}
+}
+
+@media screen and (max-width: 767px){
+    .blank_pre_footer_area {height: 175px;}
+}
+
+@media screen and (max-width: 670px){
+    .mini_location_box_holder {width: 100%; margin-bottom: 12px;}
+}
+
+@media screen and (max-width: 390px){
+    span.mini_location_aux_data {font-size: 0.8rem;}
+}
 
 
 
 
 
 
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Contact ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
 
+/* >>>>> SM/XS <<<<< */
 
+@media screen and (max-width: 767px){
+    .footer_logo_holder {width: 30%; margin: 0 auto; margin-bottom: 28px;}
+    footer.codeflair_footer {padding-top: 25px;}
+}
 
+@media screen and (max-width: 555px){
+    footer.codeflair_footer {min-height: 310px;}
+    .footer_logo_holder {width: 40%;}
+}
 
+@media screen and (max-width: 404px){
+    ul.footer_linx {padding-left: 6px;}
+}
 
+@media screen and (max-width: 380px){
+    ul.footer_linx li a {font-size: 0.7rem;}
+}
 
+@media screen and (max-width: 346px){
+    .footer_links_holder {padding-right: 2px;}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 342px){
+    .bottommost_stripe {padding-bottom: 10px;}
+    .bottommost_text_holder {float: none; text-align: center;}
+    .bottommost_socials_holder {float: none;}
+    ul.bottommost_socials {width: 64%; margin: auto;}
+}

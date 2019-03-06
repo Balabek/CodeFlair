@@ -19,8 +19,8 @@
     <link href="css/hover.css" rel="stylesheet" media="all">
     <link href="css/animate.css" rel="stylesheet" media="all">
     <link href="css/webfonts.css" rel="stylesheet" media="all">
-    <link href="slick-1.8.1/slick/slick.css" rel="stylesheet">
-    <link href="slick-1.8.1/slick/slick-theme.css" rel="stylesheet">
+    <link href="slick-1.6.0/slick/slick.css" rel="stylesheet">
+    <link href="slick-1.6.0/slick/slick-theme.css" rel="stylesheet">
     <link href="css/codeflair.css" rel="stylesheet">
     <link href="css/mq.css" rel="stylesheet">
 
@@ -95,7 +95,7 @@
                         </div>
                     </div>
 
-                    <div class="hole"></div>
+                    <div class="mask"></div>
                         <div id="codeflair-header-slider" class="carousel slide carousel-fade" data-ride="carousel">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
@@ -107,17 +107,17 @@
                             <div class="carousel-inner codeflair_inner_slider" role="listbox">
 
                                 <!-- The <img> attribute is commented out and the 'background:cover' option has been used for proper responsive behavior and more stability in general -->
-                                <div id="slide1" class="item active">
+                                <div id="slide_1" class="item active">
                                     <!--<img src="img/slide-one.jpg" class="header_slide" alt="Happy CodeFlair employees chat at their workplace">-->
                                     <div class="slide_image" style="background: url('img/slide-one.jpg') center center no-repeat; background-size: cover;"></div>
                                 </div>
 
-                                <div id="slide2" class="item">
+                                <div id="slide_2" class="item">
                                     <!--<img src="img/slide-two.jpg" class="header_slide" alt="CodeFlair employee works by her laptop">-->
                                     <div class="slide_image" style="background: url('img/slide-two.jpg') center center no-repeat; background-size: cover;"></div>
                                 </div>
 
-                                <div id="slide3" class="item">
+                                <div id="slide_3" class="item">
                                     <!--<img src="img/slide-three.jpg" class="header_slide" alt="CodeFlair Project Manager writes on a whiteboard">-->
                                     <div class="slide_image" style="background: url('img/slide-three.jpg') center center no-repeat; background-size: cover;"></div>
                                 </div>
@@ -191,7 +191,114 @@
 
                         <div role="tabpanel" class="tab-pane fade in services_tab_pane active" id="softwareArchitecture">
 
-                            <div class="col-sm-4 textual_content_area">
+                            <div class="col-sm-8 col-sm-push-4 mini_tabs_area">
+                                <ul class="nav mini_tabs" role="tablist">
+
+                                    <li role="presentation" class="col-sm-3 col-xs-3 mini_tab_btn active">
+                                        <a href="#seo" aria-controls="seo" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd seo"></span>
+                                                <h6 class="minitab_title">SEO</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 col-xs-3 mini_tab_btn">
+                                        <a href="#api" aria-controls="api" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd api"></span>
+                                                <h6 class="minitab_title">API</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 col-xs-3 mini_tab_btn">
+                                        <a href="#uiux" aria-controls="uiux" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd uiux"></span>
+                                                <h6 class="minitab_title">UI/UX</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 col-xs-3 mini_tab_btn">
+                                        <a href="#ecommerce" aria-controls="ecommerce" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd ecommerce"></span>
+                                                <h6 class="minitab_title">E-Commerce</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+
+                                    <!-- Row 2 -->
+
+                                    <li role="presentation" class="col-sm-3 col-xs-3 mini_tab_btn">
+                                        <a href="#cms" aria-controls="cms" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd cms"></span>
+                                                <h6 class="minitab_title">CMS</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 col-xs-3 mini_tab_btn">
+                                        <a href="#cloud" aria-controls="cloud" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd cloud"></span>
+                                                <h6 class="minitab_title">Cloud Solutions</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 col-xs-3 mini_tab_btn">
+                                        <a href="#analytics" aria-controls="analytics" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd analytics"></span>
+                                                <h6 class="minitab_title">Analytics</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 col-xs-3 mini_tab_btn">
+                                        <a href="#opendata" aria-controls="opendata" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd opendata"></span>
+                                                <h6 class="minitab_title">Open Data</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+
+                                    <!-- Row 3 -->
+                                    <li role="presentation" class="col-sm-3 col-xs-3 mini_tab_btn">
+                                        <a href="#ai" aria-controls="ai" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd ai"></span>
+                                                <h6 class="minitab_title">AI</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 col-xs-3 mini_tab_btn">
+                                        <a href="#ar" aria-controls="ar" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd ar"></span>
+                                                <h6 class="minitab_title">AR</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 col-xs-3 mini_tab_btn">
+                                        <a href="#bigdata" aria-controls="bigdata" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd bigdata"></span>
+                                                <h6 class="minitab_title">Big Data</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="col-sm-3 col-xs-3 mini_tab_btn">
+                                        <a href="#misc" aria-controls="misc" role="tab" data-toggle="tab">
+                                            <section class="minitab_mid_content">
+                                                <span class="mini_tab_bgd misc"></span>
+                                                <h6 class="minitab_title">Misc</h6>
+                                            </section>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> <!-- Mini Tabs Area END -->
+
+                            <div class="col-sm-4 col-sm-pull-8 textual_content_area">
                                 <div class="tab-content mini_tab_content">
 
                                     <div role="tabpanel" class="tab-pane fade in services_tab_pane active" id="seo">
@@ -410,111 +517,7 @@
                                 </div>
                             </div> <!-- Aux Textual Content Area END -->
 
-                            <div class="col-sm-8 mini_tabs_area">
-                                <ul class="nav mini_tabs" role="tablist">
-                                    <li role="presentation" class="col-sm-3 mini_tab_btn active">
-                                        <a href="#seo" aria-controls="seo" role="tab" data-toggle="tab">
-                                            <section class="minitab_mid_content">
-                                                <span class="mini_tab_bgd seo"></span>
-                                                <h6 class="minitab_title">SEO</h6>
-                                            </section>
-                                        </a>
-                                    </li>
-                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
-                                        <a href="#api" aria-controls="api" role="tab" data-toggle="tab">
-                                            <section class="minitab_mid_content">
-                                                <span class="mini_tab_bgd api"></span>
-                                                <h6 class="minitab_title">API</h6>
-                                            </section>
-                                        </a>
-                                    </li>
-                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
-                                        <a href="#uiux" aria-controls="uiux" role="tab" data-toggle="tab">
-                                            <section class="minitab_mid_content">
-                                                <span class="mini_tab_bgd uiux"></span>
-                                                <h6 class="minitab_title">UI/UX</h6>
-                                            </section>
-                                        </a>
-                                    </li>
-                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
-                                        <a href="#ecommerce" aria-controls="ecommerce" role="tab" data-toggle="tab">
-                                            <section class="minitab_mid_content">
-                                                <span class="mini_tab_bgd ecommerce"></span>
-                                                <h6 class="minitab_title">E-Commerce</h6>
-                                            </section>
-                                        </a>
-                                    </li>
 
-                                    <!-- Row 2 -->
-
-                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
-                                        <a href="#cms" aria-controls="cms" role="tab" data-toggle="tab">
-                                            <section class="minitab_mid_content">
-                                                <span class="mini_tab_bgd cms"></span>
-                                                <h6 class="minitab_title">CMS</h6>
-                                            </section>
-                                        </a>
-                                    </li>
-                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
-                                        <a href="#cloud" aria-controls="cloud" role="tab" data-toggle="tab">
-                                            <section class="minitab_mid_content">
-                                                <span class="mini_tab_bgd cloud"></span>
-                                                <h6 class="minitab_title">Cloud Solutions</h6>
-                                            </section>
-                                        </a>
-                                    </li>
-                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
-                                        <a href="#analytics" aria-controls="analytics" role="tab" data-toggle="tab">
-                                            <section class="minitab_mid_content">
-                                                <span class="mini_tab_bgd analytics"></span>
-                                                <h6 class="minitab_title">Analytics</h6>
-                                            </section>
-                                        </a>
-                                    </li>
-                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
-                                        <a href="#opendata" aria-controls="opendata" role="tab" data-toggle="tab">
-                                            <section class="minitab_mid_content">
-                                                <span class="mini_tab_bgd opendata"></span>
-                                                <h6 class="minitab_title">Open Data</h6>
-                                            </section>
-                                        </a>
-                                    </li>
-
-                                    <!-- Row 3 -->
-                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
-                                        <a href="#ai" aria-controls="ai" role="tab" data-toggle="tab">
-                                            <section class="minitab_mid_content">
-                                                <span class="mini_tab_bgd ai"></span>
-                                                <h6 class="minitab_title">AI</h6>
-                                            </section>
-                                        </a>
-                                    </li>
-                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
-                                        <a href="#ar" aria-controls="ar" role="tab" data-toggle="tab">
-                                            <section class="minitab_mid_content">
-                                                <span class="mini_tab_bgd ar"></span>
-                                                <h6 class="minitab_title">AR</h6>
-                                            </section>
-                                        </a>
-                                    </li>
-                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
-                                        <a href="#bigdata" aria-controls="bigdata" role="tab" data-toggle="tab">
-                                            <section class="minitab_mid_content">
-                                                <span class="mini_tab_bgd bigdata"></span>
-                                                <h6 class="minitab_title">Big Data</h6>
-                                            </section>
-                                        </a>
-                                    </li>
-                                    <li role="presentation" class="col-sm-3 mini_tab_btn">
-                                        <a href="#misc" aria-controls="misc" role="tab" data-toggle="tab">
-                                            <section class="minitab_mid_content">
-                                                <span class="mini_tab_bgd misc"></span>
-                                                <h6 class="minitab_title">Misc</h6>
-                                            </section>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div> <!-- Mini Tabs Area END -->
                         </div> <!-- Main Tab 1 (Software Architecture) Content END -->
 
                         <div role="tabpanel" class="tab-pane" id="mobileAndApps">
@@ -539,7 +542,7 @@
                 </section>
                 <div class="stats_circles_holder">
 
-                    <div class="col-sm-3 centralize">
+                    <div class="col-sm-3 col-xs-6 centralize">
                         <div class="stats_box text-center">
                             <div class="outermost_circle">
                                 <div class="mid_circle">
@@ -554,7 +557,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3 centralize">
+                    <div class="col-sm-3 col-xs-6 centralize">
                         <div class="stats_box text-center">
                             <div class="outermost_circle">
                                 <div class="mid_circle">
@@ -569,7 +572,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3 centralize">
+                    <div class="col-sm-3 col-xs-6 centralize">
                         <div class="stats_box text-center">
                             <div class="outermost_circle">
                                 <div class="mid_circle">
@@ -584,7 +587,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-3 centralize">
+                    <div class="col-sm-3 col-xs-6 centralize">
                         <div class="stats_box text-center">
                             <div class="outermost_circle">
                                 <div class="mid_circle">
@@ -606,6 +609,7 @@
     <div class="team_area">
         <div class="container">
             <div class="row">
+
                 <div class="personal_card_holder">
                     <div class="col-sm-3 team_member_image christoph"></div>
                         <div class="col-sm-6 team_member_card_body">
@@ -628,7 +632,8 @@
                 <div class="clearfix"></div>
 
                 <div class="personal_card_holder_2">
-                    <div class="col-sm-offset-3 col-sm-6 team_member_card_body_2">
+                    <div class="col-sm-3 col-sm-push-9 team_member_image rade"></div>
+                    <div class="col-sm-6 team_member_card_body_2">
                         <div class="team_member_details_holder_2">
                             <span class="logo_ghost_2"></span>
                             <h4 class="team_member_name_2">Rade Georgiev</h4>
@@ -643,7 +648,7 @@
                             </section>
                         </div>
                     </div>
-                    <div class="col-sm-3 team_member_image rade"></div>
+
                 </div> <!-- Rade Card END -->
             </div>
         </div>
@@ -799,10 +804,16 @@
                     <div class="col-sm-4 news_box_holder">
                         <div class="newsbox">
                             <section class="news_thumbnail">
-                                <img src="img/news_image_01.jpeg" class="img-responsive news_image" alt="Smiling co-workers negotiate">
+                                <section class="news_image" style="background: url('img/news_image_01.jpeg') center center no-repeat; background-size: cover;"></section>
                             </section>
                             <section class="news_textual_content_holder">
                                 <h3 class="news_title">Some News Title Goes Here</h3>
+                                <section class="author_image_holder">
+                                    <section class="author_image_inner_box">
+                                        <span class="author_image" style="background: url('img/face1.jpeg') center center no-repeat; background-size: cover"></span>
+                                        <small class="author_name">by Heike Schmidt</small>
+                                    </section>
+                                </section>
                                 <hr class="news_hr">
                                 <p class="news_text">
                                     Velit ut tortor pretium viverra suspendisse potenti nullam. Purus sit amet luctus
@@ -818,10 +829,16 @@
                     <div class="col-sm-4 news_box_holder">
                         <div class="newsbox">
                             <section class="news_thumbnail">
-                                <img src="img/news_image_02.jpeg" class="img-responsive news_image" alt="Smiling co-workers negotiate">
+                                <section class="news_image" style="background: url('img/news_image_02.jpeg') center center no-repeat; background-size: cover;"></section>
                             </section>
                             <section class="news_textual_content_holder">
                                 <h3 class="news_title">Another Title Placeholder</h3>
+                                <section class="author_image_holder">
+                                    <section class="author_image_inner_box">
+                                        <span class="author_image" style="background: url('img/face2.jpeg') center center no-repeat; background-size: cover"></span>
+                                        <small class="author_name">by Jurgen Klutte</small>
+                                    </section>
+                                </section>
                                 <hr class="news_hr">
                                 <p class="news_text">
                                     At in tellus integer feugiat scelerisque varius morbi enim nunc. Porta non pulvinar
@@ -836,10 +853,16 @@
                     <div class="col-sm-4 news_box_holder">
                         <div class="newsbox">
                             <section class="news_thumbnail">
-                                <img src="img/news_image_03.jpeg" class="img-responsive news_image" alt="Smiling co-workers negotiate">
+                                <section class="news_image" style="background: url('img/news_image_03.jpeg') center center no-repeat; background-size: cover;"></section>
                             </section>
                             <section class="news_textual_content_holder">
                                 <h3 class="news_title">One More News Title</h3>
+                                <section class="author_image_holder">
+                                    <section class="author_image_inner_box">
+                                        <span class="author_image" style="background: url('img/face3.jpeg') center center no-repeat; background-size: cover"></span>
+                                        <small class="author_name">by Steffi Hartschen</small>
+                                    </section>
+                                </section>
                                 <hr class="news_hr">
                                 <p class="news_text">
                                     Est placerat in egestas erat imperdiet sed euismod nisi. Senectus et netus et malesuada
@@ -884,10 +907,10 @@
                 </div> <!-- Form Holder END -->
 
                 <div class="two_mini_location_boxes_holder">
-                    <div class="col-sm-6 mini_location_box_holder">
+                    <div class="col-sm-6 col-xs-6 mini_location_box_holder">
                         <div class="mini_location_box">
-                            <section class="col-sm-5 pseudomap basel"></section>
-                            <section class="col-sm-7 pseudomap_details_holder">
+                            <section class="col-sm-5 col-xs-5 pseudomap basel"></section>
+                            <section class="col-sm-7 col-xs-7 pseudomap_details_holder">
                                 <h4 class="mini_location_ttl">Basel <span>HQ</span></h4>
                                 <span class="mini_location_aux_data"><i class="fas fa-map-marker-alt"></i>Sissacherstrasse 20, CH-4460</span>
                                 <span class="mini_location_aux_data"><i class="fas fa-phone rotator"></i>+41 61 508 50 65</span>
@@ -897,16 +920,16 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 mini_location_box_holder">
+                    <div class="col-sm-6 col-xs-6 mini_location_box_holder">
                         <div class="mini_location_box">
-                            <section class="col-sm-7 pseudomap_details_holder_2">
+                            <section class="col-sm-5 col-xs-5 col-xs-push-7 pseudomap skopje"></section>
+                            <section class="col-sm-7 col-xs-7 col-xs-pull-5 pseudomap_details_holder_2">
                                 <h4 class="mini_location_ttl">Skopje <span>HQ</span></h4>
                                 <span class="mini_location_aux_data"><i class="fas fa-map-marker-alt"></i>Sissacherstrasse 20, CH-4460</span>
                                 <span class="mini_location_aux_data"><i class="fas fa-phone rotator"></i>+41 61 508 50 65</span>
                                 <span class="mini_location_aux_data"><i class="fas fa-paper-plane"></i>info@example.com</span>
                                 <button class="btn mini_location_more_details_btn">More Details</button>
                             </section>
-                            <section class="col-sm-5 pseudomap skopje"></section>
                         </div>
                     </div>
                 </div> <!-- 2 Mini Location Boxes Holder END -->
@@ -923,21 +946,21 @@
                 <section class="col-sm-3 footer_logo_holder">
                     <img src="img/codeflair-weiss-vector.svg" class="footer_logo img-responsive" alt="CodeFlair footer logo">
                 </section>
-                <section class="col-sm-3 footer_links_holder">
+                <section class="col-sm-3 col-xs-4 footer_links_holder">
                     <ul class="footer_linx">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Clients</a></li>
                         <li><a href="#">News & Blogs</a></li>
                     </ul>
                 </section>
-                <section class="col-sm-3 footer_links_holder">
+                <section class="col-sm-3 col-xs-4 footer_links_holder">
                     <ul class="footer_linx">
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Switzerland Office</a></li>
                         <li><a href="#">Macedonia Office</a></li>
                     </ul>
                 </section>
-                <section class="col-sm-3 footer_links_holder">
+                <section class="col-sm-3 col-xs-4 footer_links_holder">
                     <ul class="footer_linx">
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Disclaimer</a></li>
@@ -964,14 +987,17 @@
 </div> <!-- #Main END-->
 
 <!-- jQuery'z -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>-->
 
 <!-- JSz -->
 <script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
-<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="slick-1.6.0/slick/slick.js"></script>
 <script type="text/javascript" src="js/codeflair.js"></script>
+
+<!--<script type="text/javascript" src="js/jquery.counterup.js"></script>-->
+
 
 </body>
 
