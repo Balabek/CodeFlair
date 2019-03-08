@@ -75,14 +75,35 @@
     }
 }
 
+@media screen and (max-width: 555px){
+    .form:hover #searchform {
+        width: 425px;
+    }
+}
 
+@media screen and (max-width: 440px){
+    .form:hover #searchform {
+        width: 380px;
+    }
+}
 
+@media screen and (max-width: 400px){
+    .form:hover #searchform {
+        width: 350px;
+    }
+}
 
+@media screen and (max-width: 369px){
+    .form:hover #searchform {
+        width: 320px;
+    }
+}
 
-
-
-
-
+@media screen and (max-width: 335px){
+    .form:hover #searchform {
+        width: 300px;
+    }
+}
 
 
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
@@ -352,7 +373,7 @@
 
 @media screen and (max-width: 767px){
     .team_area {min-height: 1140px;}
-    .personal_card_holder {width: 55%; margin: 0 auto;}
+    .personal_card_holder {width: 55%; margin: 0 auto; margin-bottom: 160px;}
     .personal_card_holder_2 {width: 55%; margin: 0 auto;}
 
     .team_member_card_body {display: block; padding-top: 32px; height: 180px;}
@@ -480,6 +501,7 @@
 }
 
 @media screen and (max-width: 380px){
+    .footer_logo_holder {width: 60%;}
     ul.footer_linx li a {font-size: 0.7rem;}
 }
 

@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
     // Homepage Slider
     $('.codeflair_home_slider').slick({
         dots: false,
@@ -39,6 +40,16 @@ $(document).ready(function(){
     });
 
 
+    // Mini-Map Slider ("Job" inner page)
+    $('.mini_map_slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+
+
     // Animating the standard hamburger-menu
     $(".navbar-toggle").on("click", function () {
         $(this).toggleClass("active");
@@ -75,10 +86,10 @@ $(document).ready(function(){
     });
 
 
-    // // Counter-Up (has dependency with 'waypoints.js')
-    // $('.counter').counterUp({
-    //     time: 1100
-    // });
+    // Counter-Up (has dependency with 'waypoints.js')
+    $('.counter').counterUp({
+        time: 1100
+    });
 
 
 

@@ -25,9 +25,10 @@ body {
     /*text-rendering: optimizeLegibility;*/
 }
 
-.main {
+.outermost_wrapper {
+    position: relative;
     width: 100%;
-    /*overflow-x: hidden;*/
+    overflow: hidden !important;
 }
 
 a:focus, button:focus {
@@ -1759,9 +1760,12 @@ footer.codeflair_footer {
     padding-left: 20px;
 }
 
-img.footer_logo {
+section.footer_logo {
     display: block;
-    height: 60px;
+    height: 70px;
+    width: 100%;
+    background: url('../img/codeflair-weiss-vector.png') center center no-repeat;
+    background-size: contain;
 }
 
 ul.footer_linx {
@@ -1864,6 +1868,529 @@ ul.bottommost_socials li a:hover, ul.bottommost_socials li a:focus {
 }
 
 
+
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+
+/* ================= */
+/* JOB (INNER PAGE) */
+/* ================= */
+
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+
+
+/* === */
+/* =========== HEADER (INNER) =========== */
+/* === */
+
+.codeflair_navbar.inner_navbar {
+    background: rgba(255,255,255,0.9);
+}
+
+.codeflair_inner_header {
+    display: block;
+    position: relative;
+    min-height: 400px;
+    height: auto;
+    padding-top: 10px;
+}
+
+.codeflair_inner_header::after {
+    content: "";
+    background: url("../img/slide_09.jpg") center center no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    -webkit-filter: brightness(30%);
+    filter: brightness(30%);
+}
+
+.job_page_main_mid_area {
+    position: relative;
+    min-height: 1000px;
+    height: auto;
+    padding-top: 35px;
+    padding-bottom: 145px;
+    background: #f8f8f8;
+}
+
+span.inner_header_ghost_logo {
+    display: block;
+    position: absolute;
+    bottom: 28px;
+    height: 245px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    background: url("../img/codeflair-farbig-white.png") center center no-repeat;
+    background-size: contain;
+}
+
+.inner_header_title_holder {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 35px;
+    position: relative;
+    z-index: 3;
+    top: 160px;
+}
+
+.inner_header_title_holder h1 {
+    font-family: "FuturaPT-Bold", "Open Sans", sans-serif;
+    font-size: 4rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+h3.inner_subtitle {
+    font-family: "FuturaPT-Light", "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    color: #CE2128;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 24px;
+}
+
+.job_description_holder p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.job_requirements_holder {
+    padding-top: 50px;
+}
+
+
+ul.job_requirements {
+    padding-left: 0;
+}
+
+ul.job_requirements li {
+    list-style-type: none;
+    margin-bottom: 18px;
+}
+
+ul.job_requirements li span {
+    font-size: 1rem;
+    color: #000000;
+}
+
+ul.job_requirements li span i {
+    font-size: 1.2rem;
+    color: #08415C;
+    margin-right: 5px;
+}
+
+
+.compensation_holder {
+    padding-top: 50px;
+}
+
+.compensation_goodies_holder {
+    padding-top: 20px;
+}
+
+.compensation_goodie {
+    position: relative;
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 32px;
+}
+
+.compensation_goodie p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.goodie {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.goodie.salary {background: url("../img/comp_wallet.svg") center center no-repeat; background-size: contain;}
+.goodie.bonus {background: url("../img/comp_euro.svg") center center no-repeat; background-size: contain;}
+.goodie.gym {background: url("../img/comp_gym.svg") center center no-repeat; background-size: contain;}
+.goodie.insurance {background: url("../img/comp_insurance.svg") center center no-repeat; background-size: contain;}
+.goodie.coffee {background: url("../img/comp_coffee.svg") center center no-repeat; background-size: contain;}
+
+
+.location_holder {
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.location_description_holder {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.location_description_holder p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.mini_map_and_slider_holder {
+    padding-top: 50px;
+    position: relative;
+}
+
+.mini_map_holder {
+    position: relative;
+    padding-top: 35px;
+    float: right;
+    z-index: 3;
+}
+
+.mini_slider_holder {
+    position: absolute;
+    z-index: 6;
+    top: 155px;
+}
+
+.mini_slide {
+    position: relative;
+    display: block;
+    width: 700px;
+    height: 400px;
+}
+
+.slick-dots {
+    bottom: 20px;
+}
+
+.application_process_holder {
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 85px;
+}
+
+h3.inner_subtitle_centered {
+    font-family: "FuturaPT-Light", "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    color: #CE2128;
+     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 24px;
+}
+
+.application_process_box {
+    padding-top: 45px;
+}
+
+.process_step {
+    margin-bottom: 34px;
+    height: 100px;
+}
+
+.application_circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: #CE2128;
+    float: left;
+    margin-right: 20px;
+}
+
+h1.process_number {
+    font-family: "FuturaPT-Bold", "Open Sans", sans-serif;
+    font-size: 7rem;
+    color: #ffffff;
+    opacity: 0.2;
+    text-align: center;
+    margin: 0;
+    z-index: 1;
+}
+
+span.process_step_icon {
+    position: absolute;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    z-index: 2;
+}
+
+span.process_step_icon.apply {
+    background: url('../img/process_apply.png') center center no-repeat;
+    background-size: contain;
+}
+span.process_step_icon.interview1 {
+    background: url('../img/process_interview1.png') center center no-repeat;
+    background-size: contain;
+}
+span.process_step_icon.testtask {
+    background: url('../img/process_testtask.png') center center no-repeat;
+    background-size: contain;
+}
+span.process_step_icon.interview2 {
+    background: url('../img/process_interview2.png') center center no-repeat;
+    background-size: contain;
+}
+span.process_step_icon.joboffer {
+    background: url('../img/process_joboffer.png') center center no-repeat;
+    background-size: contain;
+}
+
+.process_step_details {
+    width: 100%;
+    padding-top: 4px;
+}
+
+h4.process_step_title {
+    font-family: "ProximaNova-Semibold", sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #08415C;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+p.process_step_text {
+    font-size: 1rem;
+    color: #000000;
+    text-align: left;
+}
+
+
+.application_form_area {
+    min-height: 935px;
+    height: auto;
+    background: #ffffff;
+    position: relative;
+}
+
+.application_form_holder {
+    position: relative;
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.application_form {
+    position: relative;
+    border-radius: 1px;
+    top: -75px;
+    background: #ffffff;
+    border: none;
+
+    -webkit-box-shadow: 0 3px 26px 0 rgba(0,0,0,0.27);
+    -moz-box-shadow: 0 3px 26px 0 rgba(0,0,0,0.27);
+    box-shadow: 0 3px 26px 0 rgba(0,0,0,0.27);
+}
+
+.form_header {
+    height: 75px;
+    padding-top: 17px;
+    width: 100%;
+    background: #08415C;
+    top: 0;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+}
+
+.form_header h5 {
+    font-family: "FuturaPT-Medium", "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.form_inner_wrapper {
+    width: 100%;
+    padding: 26px 26px 40px 26px;
+}
+
+.cf_application_form_group {
+    margin-bottom: 0;
+}
+
+input.cf_application_input {
+    font-size: 0.88rem;
+    color: #08415C;
+    height: 48px;
+    border-radius: 1px;
+    border: 1px solid #dddddd;
+    background: #f7f7f7;
+    padding-left: 12px;
+    box-shadow: none;
+}
+
+input.cf_application_input:focus {
+    border: 1px solid #dddddd;
+}
+
+input.cf_application_input::-webkit-input-placeholder {color: #08415C !important;}
+input.cf_application_input::-moz-placeholder {color: #08415C !important;}
+input.cf_application_input:-ms-input-placeholder {color: #08415C !important;}
+input.cf_application_input:-moz-placeholder {color: #08415C !important;}
+
+
+.personal_assistant_holder {
+    position: relative;
+    padding-top: 48px;
+    width: 100%;
+    min-height: 140px;
+    height: auto;
+}
+
+span.assistant_image {
+    display: block;
+    float: left;
+    margin-right: 14px;
+    width: 100px;
+    height: 100px;
+
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.assistant_name_holder {
+    padding-top: 20px;
+
+}
+
+.assistant_name_holder h5 {
+    font-family: "ProximaNova-Semibold", sans-serif;
+    font-size: 1.1rem;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.assistant_name_holder small {
+    font-family: "ProximaNova-Light", sans-serif;
+    font-size: 0.9rem;
+    color: #666666;
+    text-align: left;
+}
+
+span.paperplane {
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    top: -55px;
+    left: 29%;
+    width: 23%;
+    height: 280px;
+    background: url(../img/paperplane.png) center center no-repeat;
+    background-size: contain;
+}
+
+textarea.cf_application_comment {
+    font-size: 0.88rem;
+    color: #08415C;
+    height: 250px;
+    border-radius: 1px;
+    border: 1px solid #dddddd;
+    background: #f7f7f7;
+    padding-left: 12px;
+    padding-top: 12px;
+    box-shadow: none;
+    resize: none;
+}
+
+textarea.cf_application_comment:focus {
+    border: 1px solid #dddddd;
+}
+
+.application_buttons_holder {
+    padding-top: 26px;
+    text-align: center;
+}
+
+.upload_btn_wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.upload_btn {
+    font-family: "ProximaNova-Semibold", sans-serif;
+    font-size: 0.88rem;
+    color: #08415C;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    padding: 11px 20px;
+    border-radius: 1px;
+    width: 255px;
+    height: 50px;
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+.upload_btn_wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+span.acrobat {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+
+    background: url('../img/acrobat.png') center center no-repeat;
+    background-size: contain;
+}
+
+span.btn_txt {
+    display: inline-block;
+    position: relative;
+    bottom: 6px;
+}
+
+button.submit_application_btn {
+    font-family: "ProximaNova-Semibold", sans-serif;
+    height: 50px;
+    width: 255px;
+    font-size: 0.88rem;
+    border-radius: 2px;
+    background: #CE2128;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+
+button.submit_application_btn:hover, button.submit_application_btn:focus {
+    background: #9b191e;
+    color: #ffffff;
+}
 
 
 
