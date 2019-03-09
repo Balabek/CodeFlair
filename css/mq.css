@@ -697,3 +697,97 @@
 @media screen and (max-width: 340px){
     span.paperplane {left: 82%;}
 }
+
+
+
+
+
+
+
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+
+/* ================= */
+/* LOCATION (INNER PAGE) */
+/* ================= */
+
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Location Welcome ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    .location_welcome_text_holder {padding-right: 20px;}
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Location Features ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .location_feature p {font-size: 0.9rem; padding-left: 16px; padding-right: 16px;}
+}
+
+@media screen and (max-width: 991px){
+    .location_feature p {font-size: 0.88rem; padding-left: 1px; padding-right: 1px;}
+}
+
+@media screen and (max-width: 767px){
+    .location_features_box {min-height: 500px;}
+}
+
+@media screen and (max-width: 575px){
+    .location_feature {width: 100%;}
+    .location_features_box {min-height: 1080px;}
+}
+
+@media screen and (max-width: 350px){
+    .location_features_box {min-height: 1124px;}
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Location Map ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    .location_map_holder {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Location-Based Hot Job Offers ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    .hot_job_offers_holder {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+
+
+
+
