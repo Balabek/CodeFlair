@@ -2055,6 +2055,10 @@ ul.job_requirements li span i {
     z-index: 3;
 }
 
+/*.embed-responsive-100x400px{*/
+    /*padding-bottom: 400px;*/
+/*}*/
+
 .mini_slider_holder {
     position: absolute;
     z-index: 6;

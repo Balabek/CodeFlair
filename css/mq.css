@@ -515,3 +515,185 @@
     .bottommost_socials_holder {float: none;}
     ul.bottommost_socials {width: 64%; margin: auto;}
 }
+
+
+
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+
+/* ================= */
+/* JOB (INNER PAGE) */
+/* ================= */
+
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Header ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1299px){
+    .inner_header_title_holder h1 {font-size: 3rem;}
+}
+
+@media screen and (max-width: 991px){
+    .inner_header_title_holder h1 {font-size: 2.5rem;}
+}
+
+@media screen and (max-width: 425px){
+    .inner_header_title_holder h1 {font-size: 2rem;}
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Location Description ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    .job_description_holder {padding-right: 20px;}
+}
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Requirements & Compensation ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    h3.inner_subtitle {font-size: 1.3rem;}
+    h3.inner_subtitle_centered {font-size: 1.3rem;}
+}
+
+@media screen and (max-width: 420px){
+    .compensation_goodie {width: 100%;}
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Location ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .mini_slider_holder {top: 175px;}
+}
+
+@media screen and (max-width: 991px){
+    .mini_slider_holder {top: 255px;}
+    .mini_slide {height: 300px;}
+}
+
+@media screen and (max-width: 767px){
+    .location_holder {padding-right: 20px;}
+    .mini_slider_holder {top: 20px; width: 100%;}
+    .mini_map_holder {float: none; top: 160px; margin-bottom: 160px;}
+
+    .mini_map_holder {
+        position: relative;
+        display: block;
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        padding-bottom: 400px
+    }
+}
+
+@media screen and (max-width: 475px){
+    .mini_slider_holder {top: 30px;}
+    .mini_slide {height: 210px;}
+    .mini_map_holder {top: 80px; margin-bottom: 80px;}
+}
+
+@media screen and (max-width: 425px){
+    .mini_map_holder {top: 140px; margin-bottom: 90px;}
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Application Process ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .application_process_holder {width: 75%;}
+}
+
+@media screen and (max-width: 991px){
+    .application_process_holder {width: 100%;}
+}
+
+@media screen and (max-width: 767px){
+    .application_process_holder {padding-left: 16px; padding-right: 16px;}
+    p.process_step_text {font-size: 0.88rem;}
+}
+
+@media screen and (max-width: 665px){
+    .application_circle {float: none; left: 41%;}
+    h4.process_step_title {text-align: center;}
+    p.process_step_text {text-align: center;}
+    .process_step {height: 200px;}
+}
+
+@media screen and (max-width: 599px){
+    .application_circle {left: 39%;}
+}
+
+@media screen and (max-width: 475px){
+    .application_circle {left: 37%;}
+
+    .process_step_details {
+        clear: both;
+        float: left;
+        padding-bottom: 38px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .application_circle {left: 33%;}
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Application Form ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    span.paperplane {left: 37%;}
+}
+
+@media screen and (max-width: 991px){
+    .application_form_holder {width: 95%;}
+}
+
+@media screen and (max-width: 670px){
+    span.paperplane {left: 50%;}
+}
+
+@media screen and (max-width: 535px){
+    span.paperplane {left: 64%;}
+}
+
+@media screen and (max-width: 400px){
+    span.paperplane {left: 77%;}
+}
+
+@media screen and (max-width: 340px){
+    span.paperplane {left: 82%;}
+}
