@@ -2571,8 +2571,74 @@ button.submit_application_btn:hover, button.submit_application_btn:focus {
 
 
 
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+
+/* ================= */
+/* NEWS (SINGLE THREAD) */
+/* ================= */
+
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+/* - - - - - - - - - */
 
 
+/* === */
+/* =========== HEADER (INNER) =========== */
+/* === */
 
+.codeflair_news_thread_header {
+    display: block;
+    position: relative;
+    min-height: 275px;
+    height: auto;
+}
 
+.news_main_area {
+    position: relative;
+    padding-top: 55px;
+    padding-bottom: 65px;
+    background: #ffffff;
+}
+
+h2.news_thread_title {
+    font-family: "ProximaNova-Bold", sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    text-align: left;
+}
+
+hr.news_thread_separator {
+    width: 100%;
+    border: none;
+    background-color: #08415C;
+    height: 1px;
+    display: block;
+    clear: both;
+}
+
+h3.news_thread_subtitle {
+    font-family: "FuturaPT-Light", "Open Sans", sans-serif;
+    font-size: 1.55rem;
+    color: #666666;
+    text-align: left;
+    letter-spacing: 1px;
+    margin-top: 36px;
+    margin-bottom: 18px;
+}
+
+p.news_thread_main_para {
+    font-size: 1rem;
+    color: #000000;
+    text-align: left;
+}
+
+.news_thread_sidebar_text_block {
+    padding-left: 0;
+}
+
+.news_thread_media_holder {
+    padding-top: 45px;
+}
 

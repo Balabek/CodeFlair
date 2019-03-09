@@ -604,14 +604,28 @@
         height: 0;
         padding: 0;
         overflow: hidden;
-        padding-bottom: 400px
+        padding-bottom: 56.25%;
     }
+
+    .mini_map_holder > iframe {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .mini_map_holder {top: 215px;}
 }
 
 @media screen and (max-width: 475px){
     .mini_slider_holder {top: 30px;}
     .mini_slide {height: 210px;}
-    .mini_map_holder {top: 80px; margin-bottom: 80px;}
+    .mini_map_holder {top: 145px; margin-bottom: 80px;}
 }
 
 @media screen and (max-width: 425px){
@@ -789,5 +803,26 @@
 
 
 
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+/* - - - - - - - - - */
 
+/* ================= */
+/* NEWS (SINGLE THREAD) */
+/* ================= */
 
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+/* - - - - - - - - - */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    .news_main_area {padding-left: 18px; padding-right: 18px;}
+}
+
+@media screen and (max-width: 475px){
+    h2.news_thread_title {font-size: 1.7rem;}
+    h3.news_thread_subtitle {font-size: 1.25rem}
+    p.news_thread_main_para {font-size: 0.9rem;}
+}
