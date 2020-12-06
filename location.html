@@ -21,6 +21,7 @@
     <link href="css/webfonts.css" rel="stylesheet" media="all">
     <link href="slick-1.6.0/slick/slick.css" rel="stylesheet">
     <link href="slick-1.6.0/slick/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick-lightbox.css">
     <link href="css/codeflair.css" rel="stylesheet">
     <link href="css/mq.css" rel="stylesheet">
 
@@ -80,7 +81,7 @@
             <div class="row">
 
                 <div class="col-sm-12 location_welcome_text_holder">
-                    <h3 class="inner_subtitle_centered">Welcome to Skopje HQ</h3>
+                    <h2 class="inner_subtitle_centered">Welcome to Skopje HQ</h2>
                     <p>
                         Magna etiam tempor orci eu lobortis. Lorem mollis aliquam ut porttitor leo a diam. Auctor neque
                         vitae tempus quam pellentesque nec nam. Enim nunc faucibus a pellentesque sit amet porttitor eget.
@@ -165,12 +166,32 @@
             <div class="row">
 
                 <div class="codeflair_location_slider">
-                    <div class="cf_slide" style="background: url('img/slide_07.jpg') no-repeat; background-size: cover;"></div>
-                    <div class="cf_slide" style="background: url('img/slide_03.jpg') no-repeat; background-size: cover;"></div>
-                    <div class="cf_slide" style="background: url('img/slide_10.jpeg') no-repeat; background-size: cover;"></div>
-                    <div class="cf_slide" style="background: url('img/slide_13.jpg') no-repeat; background-size: cover;"></div>
-                    <div class="cf_slide" style="background: url('img/slide_06.jpg') no-repeat; background-size: cover;"></div>
-                    <div class="cf_slide" style="background: url('img/slide_11.jpeg') no-repeat; background-size: cover;"></div>
+
+                    <div>
+                        <a href="img/slide_12.jpeg" class="cf_slide_lightbox"><img src="img/slide_12.jpeg" class="cf_slide" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="img/slide_10.jpeg" class="cf_slide_lightbox"><img src="img/slide_10.jpeg" class="cf_slide" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="img/slide_05.jpg" class="cf_slide_lightbox"><img src="img/slide_05.jpg" class="cf_slide" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="img/slide_13.jpg" class="cf_slide_lightbox"><img src="img/slide_13.jpg" class="cf_slide" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="img/slide_11.jpeg" class="cf_slide_lightbox"><img src="img/slide_11.jpeg" class="cf_slide" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="img/slide_08.jpg" class="cf_slide_lightbox"><img src="img/slide_08.jpg" class="cf_slide" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="img/slide_02.jpg" class="cf_slide_lightbox"><img src="img/slide_02.jpg" class="cf_slide" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="img/slide_07.jpg" class="cf_slide_lightbox"><img src="img/slide_07.jpg" class="cf_slide" alt=""></a>
+                    </div>
+
                 </div>
 
             </div>
@@ -180,7 +201,7 @@
     <div class="location_map_area">
         <div class="container">
             <div class="row">
-                <h3 class="inner_subtitle_centered">How do I get there?</h3>
+                <h2 class="inner_subtitle_centered">How do I get there?</h2>
                 <div class="location_map_holder">
                     <div class="col-sm-12 location_map_box">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94881.79906744925!2d21.354850349961495!3d41.99906896265975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415a58c9aa2a5%3A0xb2ed88c260872020!2sSkopje%2C+Macedonia+(FYROM)!5e0!3m2!1sen!2s!4v1552142218710" width="100%" height="365" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -193,7 +214,7 @@
     <div class="location_based_job_offers_area">
         <div class="container">
             <div class="row">
-                <h3 class="inner_subtitle_centered">Current Hot Job Offers</h3>
+                <h2 class="inner_subtitle_centered">Current Hot Job Offers</h2>
 
                 <div class="hot_job_offers_holder">
 
@@ -240,13 +261,9 @@
                     </div> <!-- Job Stripe END -->
 
                 </div>
-
             </div>
         </div>
     </div> <!-- Location-based Jobs Area END -->
-
-
-
 
     <footer class="codeflair_footer">
         <div class="container-fluid">
@@ -303,6 +320,7 @@
 <!-- JSz -->
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="slick-1.6.0/slick/slick.js"></script>
+<script type="text/javascript" src="js/slick-lightbox.js"></script>
 <script type="text/javascript" src="js/codeflair.js"></script>
 
 <script type="text/javascript" src="js/jquery.counterup.js"></script>

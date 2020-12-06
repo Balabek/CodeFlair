@@ -372,8 +372,8 @@ ul.codeflair_main_menu li a:hover {
     position: absolute;
     z-index: 5;
     width: 100%;
-    height: 801px;
-    background: url("../img/hole.png") center center no-repeat;
+    height: 802px;
+    background: url("../img/homepage_slider_mask.svg") center center no-repeat;
     background-size: cover;
 }
 
@@ -415,9 +415,11 @@ ul.codeflair_main_menu li a:hover {
 }
 
 .header_slide {
-    position: relative;
-    left: 25%;
-    object-fit: cover;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    height: 100%;
 }
 
 .slide_image {
@@ -438,7 +440,7 @@ ul.codeflair_main_menu li a:hover {
 
 h2.header_title {
     font-family: FuturaPT-Medium, "Open Sans", sans-serif;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     color: #1A1919;
     text-align: left;
     text-shadow: none !important;
@@ -448,7 +450,7 @@ h2.header_title {
 
 p.header_teaser_text {
     font-family: ProximaNova-Regular, sans-serif;
-    font-size: 1.212rem;
+    font-size: 1.4rem;
     color: #1A1919;
     text-align: left;
     text-shadow: none !important;
@@ -550,10 +552,11 @@ button.discover_more_btn:hover, button.discover_more_btn:focus {
 
 ul.client_logos {
     position: relative;
-    display: block;
+    display: table;
     padding-top: 25px;
+    padding-left: 0;
     text-align: center;
-    width: 78%;
+    /*width: 78%;*/
     margin: auto;
 }
 
@@ -574,6 +577,10 @@ span.client_logo {
 
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+
+    filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+
 }
 
 
@@ -650,8 +657,9 @@ li.main_tab_btn a {
 
     display: -webkit-flex;
     display: flex;
-    justify-content: center;
-    vertical-align: middle;
+    display: -ms-flex;
+    /*justify-content: center;*/
+    /*vertical-align: middle;*/
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -717,12 +725,6 @@ li.main_tab_btn a:before {
     transition: all 0.4s ease;
 }
 
-/*li.main_tab_btn.active > a {*/
-    /*-webkit-box-shadow: 0px 11px 17px -7px rgba(0,0,0,0.24);*/
-    /*-moz-box-shadow: 0px 11px 17px -7px rgba(0,0,0,0.24);*/
-    /*box-shadow: 0px 11px 17px -7px rgba(0,0,0,0.24);*/
-/*}*/
-
 li.main_tab_btn a:focus:before, li.main_tab_btn a:active:before {
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
@@ -735,8 +737,11 @@ li.main_tab_btn.active > a:before {
     border-color: #CE2128 transparent transparent transparent;
 }
 
-li.main_tab_btn a:hover:before {
-    border-color: #052d40 transparent transparent transparent;
+/* Preventing constant hovering on touch devices */
+@media not all and (pointer: coarse) {
+    li.main_tab_btn a:hover:before {
+        border-color: transparent transparent transparent;
+    }
 }
 
 li.active.main_tab_btn > li.main_tab_btn a:before {
@@ -768,20 +773,22 @@ li.active.main_tab_btn > a {
 
 h5.mini_tab_title {
     font-family: FuturaPT-Medium, "Open Sans", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: #0C090D;
     text-align: left;
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 p.mini_tab_text {
-    font-size: 1.074rem;
+    font-size: 1.2rem;
     color: #666666;
     text-align: left;
     height: 285px;
-    overflow: scroll;
-    overflow-y: visible;
+    overflow-x: hidden;
+    -ms-overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-overflow-y: scroll;
     margin-bottom: 50px;
 }
 
@@ -820,6 +827,7 @@ li.mini_tab_btn a {
     border-radius: 2px;
     border: none !important;
     z-index: 7;
+    padding: 0;
 
     display: -webkit-flex;
     display: flex;
@@ -839,7 +847,7 @@ li.mini_tab_btn a {
 
 h6.minitab_title {
     font-family: ProximaNova-Bold, sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #8c8c8c;
     text-align: center;
 }
@@ -1260,11 +1268,16 @@ span.logo_ghost_2 {
     padding: 0;
 }
 
+img.job_image {
+    width: 100%;
+    object-fit: cover;
+}
+
 .job_image_box {
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;*/
+    /*justify-content: center;*/
     height: inherit;
     max-height: 100%;
     border-top-left-radius: 4px;
@@ -1276,6 +1289,7 @@ span.logo_ghost_2 {
 span.jobicon {
     position: absolute;
     left: 0;
+    top: 16px;
     right: 0;
     z-index: 2;
     font-size: 6.74rem;
@@ -1289,7 +1303,7 @@ span.jobicon {
 
 h4.job_title {
     font-family: "FuturaPT-Bold", "Open Sans", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.44rem;
     color: #000000;
     text-align: left;
     margin-top: 1px;
@@ -1297,7 +1311,7 @@ h4.job_title {
 }
 
 small.job_location {
-    font-size: 0.88rem;
+    font-size: 1rem;
     color: #000000;
     text-align: left;
     padding-left: 0;
@@ -1309,7 +1323,7 @@ small.job_location i {
 }
 
 .job_description_text_box {
-    padding-top: 18px;
+    padding-top: 15px;
     max-height: 100px;
     overflow: hidden;
 }
@@ -1367,9 +1381,14 @@ button.job_apply_btn:hover, button.job_apply_btn:focus {
     padding-bottom: 0;
 }
 
-.cf_slide {
-    width: 370px;
+a.cf_slide_lightbox {
+    cursor: pointer;
+}
+
+img.cf_slide {
+    width: 100%;
     height: 500px;
+    object-fit: cover;
 }
 
 .slick-prev {
@@ -1381,9 +1400,6 @@ button.job_apply_btn:hover, button.job_apply_btn:focus {
     z-index: 2;
     right: 14px;
 }
-
-
-
 
 
 /* === */
@@ -1444,7 +1460,7 @@ button.job_apply_btn:hover, button.job_apply_btn:focus {
 
 h3.news_title {
     font-family: "FuturaPT-Bold", "Open Sans", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #000000;
     margin-top: 0;
     margin-bottom: 14px;
@@ -1462,10 +1478,10 @@ hr.news_hr {
 }
 
 p.news_text {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #666666;
     text-align: left;
-    height: 155px;
+    height: 180px;
     padding-top: 16px;
     overflow: hidden;
 }
@@ -1525,7 +1541,7 @@ span.author_image {
 }
 
 small.author_name {
-    font-size: 0.77rem;
+    font-size: 0.87rem;
     text-align: left;
     color: #666666;
     position: relative;
@@ -1700,7 +1716,7 @@ h4.mini_location_ttl span {
 
 span.mini_location_aux_data {
     display: block;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #000000;
     margin-bottom: 10px;
 }
@@ -1952,7 +1968,7 @@ span.inner_header_ghost_logo {
     text-align: center;
 }
 
-h3.inner_subtitle {
+h2.inner_subtitle {
     font-family: "FuturaPT-Light", "Open Sans", sans-serif;
     font-size: 1.6rem;
     color: #CE2128;
@@ -1963,7 +1979,7 @@ h3.inner_subtitle {
 }
 
 .job_description_holder p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #000000;
 }
 
@@ -1982,7 +1998,7 @@ ul.job_requirements li {
 }
 
 ul.job_requirements li span {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #000000;
 }
 
@@ -2009,7 +2025,7 @@ ul.job_requirements li span i {
 }
 
 .compensation_goodie p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #000000;
 }
 
@@ -2040,7 +2056,7 @@ ul.job_requirements li span i {
 }
 
 .location_description_holder p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #000000;
 }
 
@@ -2074,7 +2090,7 @@ ul.job_requirements li span i {
 }
 
 .slick-dots {
-    bottom: 20px;
+    bottom: 25px;
 }
 
 .application_process_holder {
@@ -2084,7 +2100,7 @@ ul.job_requirements li span i {
     padding-top: 85px;
 }
 
-h3.inner_subtitle_centered {
+h2.inner_subtitle_centered {
     font-family: "FuturaPT-Light", "Open Sans", sans-serif;
     font-size: 1.6rem;
     color: #CE2128;
@@ -2092,6 +2108,10 @@ h3.inner_subtitle_centered {
     text-transform: uppercase;
     letter-spacing: 6px;
     margin-bottom: 24px;
+}
+
+.location_welcome_text_holder p {
+    font-size: 1.1rem;
 }
 
 .application_process_box {
@@ -2171,7 +2191,7 @@ h4.process_step_title {
 }
 
 p.process_step_text {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #000000;
     text-align: left;
 }
@@ -2496,7 +2516,7 @@ button.submit_application_btn:hover, button.submit_application_btn:focus {
 
 .location_feature p {
     font-family: "ProximaNova-Semibold", sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #666666;
     padding-left: 28px;
     padding-right: 28px;
@@ -2592,17 +2612,30 @@ button.submit_application_btn:hover, button.submit_application_btn:focus {
     display: block;
     position: relative;
     min-height: 275px;
+    margin-bottom: 55px;
     height: auto;
 }
 
 .news_main_area {
     position: relative;
-    padding-top: 55px;
-    padding-bottom: 65px;
     background: #ffffff;
 }
 
-h2.news_thread_title {
+section.intro_text {
+    display: block;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    height: auto;
+}
+
+section.intro_text p {
+    font-family: "ProximaNova-Regular", sans-serif;
+    font-size: 1.374rem;
+    color: #000000;
+    text-align: left;
+}
+
+h1.news_thread_title {
     font-family: "ProximaNova-Bold", sans-serif;
     font-size: 2rem;
     color: #000000;
@@ -2618,9 +2651,9 @@ hr.news_thread_separator {
     clear: both;
 }
 
-h3.news_thread_subtitle {
+h2.news_thread_subtitle {
     font-family: "FuturaPT-Light", "Open Sans", sans-serif;
-    font-size: 1.55rem;
+    font-size: 1.99rem;
     color: #666666;
     text-align: left;
     letter-spacing: 1px;
@@ -2629,16 +2662,37 @@ h3.news_thread_subtitle {
 }
 
 p.news_thread_main_para {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #000000;
     text-align: left;
 }
 
 .news_thread_sidebar_text_block {
+    padding-top: 45px;
     padding-left: 0;
+    margin-bottom: 105px;
 }
 
 .news_thread_media_holder {
     padding-top: 45px;
 }
+
+.superfluid {padding: 0;}
+
+.parallax_bgd_holder {
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+img.parallax_bgd {
+    width: 100%;
+}
+
+
+
+
+
 

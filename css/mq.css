@@ -110,6 +110,23 @@
 /* =========== Header ========== */
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 
+/* >>>>> L/XL <<<<< */
+
+@media screen and (min-width: 1600px){
+    .mask {
+        background: url("../img/homepage_slider_mask_xl.svg") center center no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 2200px){
+    .mask {
+        background: url("../img/homepage_slider_mask_xxl.svg") center center no-repeat;
+        background-size: cover;
+    }
+}
+
+
 /* >>>>> SM/XS <<<<< */
 
 @media screen and (max-width: 767px){
@@ -147,23 +164,6 @@
 
 /* >>>>> SM/XS <<<<< */
 
-@media screen and (max-width: 1397px){
-    ul.client_logos {width: 82%;}
-}
-
-@media screen and (max-width: 1329px){
-    ul.client_logos {width: 90%;}
-}
-
-@media screen and (max-width: 1211px){
-    .client_logos_holder {padding-top: 1px;}
-    ul.client_logos {width: 95%;}
-}
-
-@media screen and (max-width: 1148px){
-    ul.client_logos {width: 99%;}
-}
-
 @media screen and (max-width: 1101px){
     span.client_logo {width: 140px;}
 }
@@ -188,6 +188,10 @@
     span.client_logo {width: 150px;}
 
     .client_logos_holder {z-index: 9; top: -75px;}
+}
+
+@media screen and (max-width: 767px){
+    ul.client_logos {display: block; padding-left: 36px;}
 }
 
 @media screen and (max-width: 595px){
@@ -429,6 +433,21 @@
 
 
 
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Sliders ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+/* This is to prevent launching lightbox images on smaller screens and therefore to prevent redundancy */
+@media screen and (max-width: 580px){
+    a.cf_slide_lightbox {display: inline-block; pointer-events: none !important;}
+    img.cf_slide {display: inline-block; pointer-events: none !important;}
+}
+
+
+
+
 
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 /* =========== News ========== */
@@ -568,8 +587,8 @@
 /* >>>>> SM/XS <<<<< */
 
 @media screen and (max-width: 991px){
-    h3.inner_subtitle {font-size: 1.3rem;}
-    h3.inner_subtitle_centered {font-size: 1.3rem;}
+    h2.inner_subtitle {font-size: 1.3rem;}
+    h2.inner_subtitle_centered {font-size: 1.3rem;}
 }
 
 @media screen and (max-width: 420px){
@@ -817,12 +836,22 @@
 
 /* >>>>> SM/XS <<<<< */
 
+@media screen and (max-width: 991px){
+    .parallax_bgd_holder {height: 300px;}
+    .news_thread_sidebar_text_block {padding-top: 16px; margin-bottom: 30px;}
+    .news_thread_media_holder {padding-left: 0; padding-top: 20px;}
+}
+
 @media screen and (max-width: 767px){
     .news_main_area {padding-left: 18px; padding-right: 18px;}
+    .codeflair_news_thread_header {margin-bottom: 5px;}
 }
 
 @media screen and (max-width: 475px){
-    h2.news_thread_title {font-size: 1.7rem;}
-    h3.news_thread_subtitle {font-size: 1.25rem}
+    h1.news_thread_title {font-size: 1.7rem;}
+    h2.news_thread_subtitle {font-size: 1.25rem}
     p.news_thread_main_para {font-size: 0.9rem;}
+    section.intro_text p {font-size: 1.2rem;}
+
+    .news_thread_sidebar_text_block {padding-top: 0;}
 }
